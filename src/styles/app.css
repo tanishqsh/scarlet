@@ -16,24 +16,96 @@ Bottom peak styling
  */
 .bottom-peak-container-primary {
   position: absolute;
-  bottom: -23%;
-  left: 50;
-  right: 50;
-  height: 35vh;
-  width: 35vh;
-  border-radius: 50%;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0%;
+  clip-path: circle(10% at 50% 99.99%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
   background: #ff2400;
+}
+.bottom-peak-container-primary .menu {
+  position: absolute;
+  left: 30%;
+  bottom: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-primary .menu h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 2.124rem;
 }
 
 .bottom-peak-container-secondary {
   position: absolute;
-  bottom: -23%;
-  left: 50;
-  right: 50;
-  height: 35vh;
-  width: 35vh;
-  border-radius: 50%;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0%;
+  clip-path: circle(10% at 50% 99.99%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
   background: #fff;
+}
+.bottom-peak-container-secondary .menu {
+  position: absolute;
+  left: 30%;
+  bottom: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-secondary .menu h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 2.124rem;
+}
+
+.bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0%;
+  clip-path: circle(10% at 50% 99.99%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
+  background: #ff2400;
+  clip-path: circle(100%);
+}
+.bottom-peak-container-primary-scrolled .menu, .bottom-peak-container-primary:hover .menu {
+  position: absolute;
+  left: 30%;
+  bottom: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-primary-scrolled .menu h1, .bottom-peak-container-primary:hover .menu h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 2.124rem;
+}
+
+.bottom-peak-container-secondary-scrolled {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0%;
+  clip-path: circle(10% at 50% 99.99%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
+  background: #fff;
+  clip-path: circle(100%);
+}
+.bottom-peak-container-secondary-scrolled .menu {
+  position: absolute;
+  left: 30%;
+  bottom: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-secondary-scrolled .menu h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 2.124rem;
 }
 
 /*

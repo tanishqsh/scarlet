@@ -4,14 +4,29 @@
 /*
 Bottom peak styling
  */
-@mixin bottom-peak-container {
+@mixin bottom-peak-container() {
   position: absolute;
-  bottom: -23%;
-  left: 50;
-  right: 50;
-  height: 35vh;
-  width: 35vh;
-  border-radius: 50%;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0%;
+  clip-path: circle(10% at 50% 99.99%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
+
+  .menu {
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+    transition: all 0.5s ease-in-out;
+
+    h1 {
+      padding: 10px;
+      color: $secondary-color;
+      font-size: $secondary-font-size;
+    }
+  }
+
 }
 
 .bottom-peak-container-primary{
@@ -22,6 +37,18 @@ Bottom peak styling
 .bottom-peak-container-secondary{
   @include bottom-peak-container;
   background: $secondary-color;
+}
+
+.bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover{
+  @include bottom-peak-container;
+  background: $primary-color;
+  clip-path: circle(100%);
+}
+
+.bottom-peak-container-secondary-scrolled{
+  @include bottom-peak-container;
+  background: $secondary-color;
+  clip-path: circle(100%);
 }
 
 

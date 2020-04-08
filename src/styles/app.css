@@ -4,21 +4,67 @@
 
 * {
   margin: 0;
+  overflow: hidden;
   padding: 0;
   font-family: "Crimson Text", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+Bottom peak styling
+ */
+.bottom-peak-container-primary {
+  position: absolute;
+  bottom: -23%;
+  left: 50;
+  right: 50;
+  height: 35vh;
+  width: 35vh;
+  border-radius: 50%;
+  background: #ff2400;
+}
+
+.bottom-peak-container-secondary {
+  position: absolute;
+  bottom: -23%;
+  left: 50;
+  right: 50;
+  height: 35vh;
+  width: 35vh;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/*
+Current Date Widget
+ */
+.current-date-container {
+  color: #ff2400;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
 .home-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 100vh;
+  align-items: center;
+}
+.home-container .inner-container {
+  display: block;
 }
 .home-container h1 {
   font-size: 3.43rem;
   color: #ff2400;
-  font-weight: bold;
+  font-weight: 800;
+  line-height: 1;
+}
+.home-container h3 {
+  font-size: 1.31rem;
+  font-style: italic;
+  color: #ff2400;
 }
 
 /*# sourceMappingURL=app.css.map */

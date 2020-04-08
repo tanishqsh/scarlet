@@ -2,13 +2,25 @@
 
 .home-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 100vh;
+  align-items: center;
+
+  .inner-container {
+    display: block;
+  }
 
   h1 {
     font-size: $primary-font-size;
     color: $primary-color;
-    font-weight: bold;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: $tertiary-font-size;
+    font-style: italic;
+    color: $primary-color;
   }
 
 }

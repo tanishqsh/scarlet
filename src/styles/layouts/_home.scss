@@ -2,12 +2,13 @@
 
 .home-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
 
   h1 {
-
+    font-size: $primary-font-size;
+    color: $primary-color;
+    font-weight: bold;
   }
 
 }

@@ -1,4 +1,8 @@
-body {
+:root {
+  font-size: 16px;
+}
+
+* {
   margin: 0;
   padding: 0;
   font-family: "Crimson Text", serif;
@@ -8,9 +12,13 @@ body {
 
 .home-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.home-container h1 {
+  font-size: 3.43rem;
+  color: #ff2400;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=app.css.map */

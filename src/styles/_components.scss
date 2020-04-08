@@ -9,22 +9,40 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 99.99%);
+  clip-path: circle(10% at 50% 100%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
 
   .menu {
     position: absolute;
-    left: 30%;
-    bottom: 50%;
+    left: 20%;
+    bottom: 30%;
     transition: all 0.5s ease-in-out;
 
     h1 {
-      padding: 10px;
-      color: $secondary-color;
+      color: rgba(255, 255, 255, 0.5);
       font-size: $secondary-font-size;
+      transition: all 0.5s ease-in-out;
     }
+
+    h3 {
+      font-size: 0.1px;
+      color: $primary-color;
+      font-style: italic;
+      transition: all 0.5s ease-in-out;
+    }
+
+    h1:hover h3 {
+      font-size: $tertiary-font-size;
+      color: $secondary-color;
+    }
+
+    h1:hover{
+      color: $secondary-color;
+    }
+
+
   }
 
 }

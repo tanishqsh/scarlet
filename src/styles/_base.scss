@@ -8,3 +8,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+a, a:focus {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $secondary-color;
+  text-decoration: none;
+}

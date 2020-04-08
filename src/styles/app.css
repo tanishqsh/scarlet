@@ -11,6 +11,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a, a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*
 Bottom peak styling
  */
@@ -19,7 +29,7 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 99.99%);
+  clip-path: circle(10% at 50% 100%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -27,14 +37,27 @@ Bottom peak styling
 }
 .bottom-peak-container-primary .menu {
   position: absolute;
-  left: 30%;
-  bottom: 50%;
+  left: 20%;
+  bottom: 30%;
   transition: all 0.5s ease-in-out;
 }
 .bottom-peak-container-primary .menu h1 {
-  padding: 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 2.124rem;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-primary .menu h3 {
+  font-size: 0.1px;
+  color: #ff2400;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-primary .menu h1:hover h3 {
+  font-size: 1.31rem;
+  color: #fff;
+}
+.bottom-peak-container-primary .menu h1:hover {
+  color: #fff;
 }
 
 .bottom-peak-container-secondary {
@@ -42,7 +65,7 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 99.99%);
+  clip-path: circle(10% at 50% 100%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -50,14 +73,27 @@ Bottom peak styling
 }
 .bottom-peak-container-secondary .menu {
   position: absolute;
-  left: 30%;
-  bottom: 50%;
+  left: 20%;
+  bottom: 30%;
   transition: all 0.5s ease-in-out;
 }
 .bottom-peak-container-secondary .menu h1 {
-  padding: 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 2.124rem;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-secondary .menu h3 {
+  font-size: 0.1px;
+  color: #ff2400;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-secondary .menu h1:hover h3 {
+  font-size: 1.31rem;
+  color: #fff;
+}
+.bottom-peak-container-secondary .menu h1:hover {
+  color: #fff;
 }
 
 .bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover {
@@ -65,7 +101,7 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 99.99%);
+  clip-path: circle(10% at 50% 100%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -74,14 +110,27 @@ Bottom peak styling
 }
 .bottom-peak-container-primary-scrolled .menu, .bottom-peak-container-primary:hover .menu {
   position: absolute;
-  left: 30%;
-  bottom: 50%;
+  left: 20%;
+  bottom: 30%;
   transition: all 0.5s ease-in-out;
 }
 .bottom-peak-container-primary-scrolled .menu h1, .bottom-peak-container-primary:hover .menu h1 {
-  padding: 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 2.124rem;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-primary-scrolled .menu h3, .bottom-peak-container-primary:hover .menu h3 {
+  font-size: 0.1px;
+  color: #ff2400;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-primary-scrolled .menu h1:hover h3, .bottom-peak-container-primary:hover .menu h1:hover h3 {
+  font-size: 1.31rem;
+  color: #fff;
+}
+.bottom-peak-container-primary-scrolled .menu h1:hover, .bottom-peak-container-primary:hover .menu h1:hover {
+  color: #fff;
 }
 
 .bottom-peak-container-secondary-scrolled {
@@ -89,7 +138,7 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 99.99%);
+  clip-path: circle(10% at 50% 100%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -98,14 +147,27 @@ Bottom peak styling
 }
 .bottom-peak-container-secondary-scrolled .menu {
   position: absolute;
-  left: 30%;
-  bottom: 50%;
+  left: 20%;
+  bottom: 30%;
   transition: all 0.5s ease-in-out;
 }
 .bottom-peak-container-secondary-scrolled .menu h1 {
-  padding: 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 2.124rem;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-secondary-scrolled .menu h3 {
+  font-size: 0.1px;
+  color: #ff2400;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-peak-container-secondary-scrolled .menu h1:hover h3 {
+  font-size: 1.31rem;
+  color: #fff;
+}
+.bottom-peak-container-secondary-scrolled .menu h1:hover {
+  color: #fff;
 }
 
 /*

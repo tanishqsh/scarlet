@@ -9,10 +9,12 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 100%);
-  transition: all 0.5s ease-in-out;
+  clip-path: circle(10% at 50% 105%);
+  -webkit-clip-path: circle(10% at 50% 105%);
+  transition: $transition;
   cursor: pointer;
   z-index: 10000;
+  animation: heartbeat 2s infinite;
 
   .menu {
     position: absolute;
@@ -23,14 +25,14 @@ Bottom peak styling
     h1 {
       color: rgba(255, 255, 255, 0.5);
       font-size: $secondary-font-size;
-      transition: all 0.5s ease-in-out;
+      transition: $transition;
     }
 
     h3 {
       font-size: 0.1px;
       color: $primary-color;
       font-style: italic;
-      transition: all 0.5s ease-in-out;
+      transition: $transition;
     }
 
     h1:hover h3 {
@@ -41,9 +43,25 @@ Bottom peak styling
     h1:hover{
       color: $secondary-color;
     }
-
-
   }
+
+  .quote {
+    width: 30%;
+    line-height: 1;
+    font-size: $primary-font-size;
+    color: $secondary-color;
+    font-weight: bold;
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+
+    author {
+      font-size: $tertiary-font-size;
+      font-style: italic;
+    }
+  }
+
+
 
 }
 
@@ -60,12 +78,14 @@ Bottom peak styling
 .bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover{
   @include bottom-peak-container;
   background: $primary-color;
+  animation: none;
   clip-path: circle(100%);
 }
 
-.bottom-peak-container-secondary-scrolled{
+.bottom-peak-container-secondary-scrolled, .bottom-peak-container-secondary:hover{
   @include bottom-peak-container;
   background: $secondary-color;
+  animation: none;
   clip-path: circle(100%);
 }
 
@@ -79,4 +99,43 @@ Current Date Widget
   position: absolute;
   right:10%;
   top: 5%;
+}
+
+/*
+Scarlet Logo
+ */
+
+.logo-container {
+  color: $primary-color;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+
+  h2 {
+    font-size: $secondary-font-size;
+    font-weight: bold;
+  }
+
+}
+
+/*
+Social Links
+ */
+
+.social-links-container {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  cursor: pointer;
+
+  h2 {
+    color: $inactive-primary-color;
+    font-size: $tertiary-font-size;
+    font-weight: bold;
+    transition: $transition;
+  }
+
+  h2:hover {
+    color: $primary-color;
+  }
 }

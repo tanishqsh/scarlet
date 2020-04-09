@@ -1,12 +1,16 @@
 import React from 'react';
 import BottomPeak from "../../components/BottomPeak";
 import CurrentDate from "../../components/CurrentDate";
+import Logo from "../../components/Logo";
+import SocialLinks from "../../components/SocialLinks";
 
 
 function Home() {
     return(
         <div className={'home-container container-fluid'}>
-            <BottomPeak/>
+            <BottomPeak class={'primary'}/>
+            <Logo/>
+            <SocialLinks/>
             <CurrentDate/>
             <div className={'row inner-container'}>
                 <div className={'col-sm-2'}/>

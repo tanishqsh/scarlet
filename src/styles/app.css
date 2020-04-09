@@ -2,6 +2,17 @@
   font-size: 16px;
 }
 
+@keyframes heartbeat {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.05);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 * {
   margin: 0;
   overflow: hidden;
@@ -12,12 +23,12 @@
 }
 
 a, a:focus {
-  color: #fff;
+  color: #ff2400;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
+  color: #ff2400;
   text-decoration: none;
 }
 
@@ -29,10 +40,12 @@ Bottom peak styling
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 100%);
+  clip-path: circle(10% at 50% 105%);
+  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
+  animation: heartbeat 2s infinite;
   background: #ff2400;
 }
 .bottom-peak-container-primary .menu {
@@ -59,16 +72,32 @@ Bottom peak styling
 .bottom-peak-container-primary .menu h1:hover {
   color: #fff;
 }
+.bottom-peak-container-primary .quote {
+  width: 30%;
+  line-height: 1;
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+}
+.bottom-peak-container-primary .quote author {
+  font-size: 1.31rem;
+  font-style: italic;
+}
 
 .bottom-peak-container-secondary {
   position: absolute;
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 100%);
+  clip-path: circle(10% at 50% 105%);
+  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
+  animation: heartbeat 2s infinite;
   background: #fff;
 }
 .bottom-peak-container-secondary .menu {
@@ -95,17 +124,34 @@ Bottom peak styling
 .bottom-peak-container-secondary .menu h1:hover {
   color: #fff;
 }
+.bottom-peak-container-secondary .quote {
+  width: 30%;
+  line-height: 1;
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+}
+.bottom-peak-container-secondary .quote author {
+  font-size: 1.31rem;
+  font-style: italic;
+}
 
 .bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover {
   position: absolute;
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 100%);
+  clip-path: circle(10% at 50% 105%);
+  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
+  animation: heartbeat 2s infinite;
   background: #ff2400;
+  animation: none;
   clip-path: circle(100%);
 }
 .bottom-peak-container-primary-scrolled .menu, .bottom-peak-container-primary:hover .menu {
@@ -132,42 +178,73 @@ Bottom peak styling
 .bottom-peak-container-primary-scrolled .menu h1:hover, .bottom-peak-container-primary:hover .menu h1:hover {
   color: #fff;
 }
+.bottom-peak-container-primary-scrolled .quote, .bottom-peak-container-primary:hover .quote {
+  width: 30%;
+  line-height: 1;
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+}
+.bottom-peak-container-primary-scrolled .quote author, .bottom-peak-container-primary:hover .quote author {
+  font-size: 1.31rem;
+  font-style: italic;
+}
 
-.bottom-peak-container-secondary-scrolled {
+.bottom-peak-container-secondary-scrolled, .bottom-peak-container-secondary:hover {
   position: absolute;
   height: 100vh;
   width: 100vw;
   border-radius: 0%;
-  clip-path: circle(10% at 50% 100%);
+  clip-path: circle(10% at 50% 105%);
+  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
+  animation: heartbeat 2s infinite;
   background: #fff;
+  animation: none;
   clip-path: circle(100%);
 }
-.bottom-peak-container-secondary-scrolled .menu {
+.bottom-peak-container-secondary-scrolled .menu, .bottom-peak-container-secondary:hover .menu {
   position: absolute;
   left: 20%;
   bottom: 30%;
   transition: all 0.5s ease-in-out;
 }
-.bottom-peak-container-secondary-scrolled .menu h1 {
+.bottom-peak-container-secondary-scrolled .menu h1, .bottom-peak-container-secondary:hover .menu h1 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 2.124rem;
   transition: all 0.5s ease-in-out;
 }
-.bottom-peak-container-secondary-scrolled .menu h3 {
+.bottom-peak-container-secondary-scrolled .menu h3, .bottom-peak-container-secondary:hover .menu h3 {
   font-size: 0.1px;
   color: #ff2400;
   font-style: italic;
   transition: all 0.5s ease-in-out;
 }
-.bottom-peak-container-secondary-scrolled .menu h1:hover h3 {
+.bottom-peak-container-secondary-scrolled .menu h1:hover h3, .bottom-peak-container-secondary:hover .menu h1:hover h3 {
   font-size: 1.31rem;
   color: #fff;
 }
-.bottom-peak-container-secondary-scrolled .menu h1:hover {
+.bottom-peak-container-secondary-scrolled .menu h1:hover, .bottom-peak-container-secondary:hover .menu h1:hover {
   color: #fff;
+}
+.bottom-peak-container-secondary-scrolled .quote, .bottom-peak-container-secondary:hover .quote {
+  width: 30%;
+  line-height: 1;
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+}
+.bottom-peak-container-secondary-scrolled .quote author, .bottom-peak-container-secondary:hover .quote author {
+  font-size: 1.31rem;
+  font-style: italic;
 }
 
 /*
@@ -178,6 +255,39 @@ Current Date Widget
   position: absolute;
   right: 10%;
   top: 5%;
+}
+
+/*
+Scarlet Logo
+ */
+.logo-container {
+  color: #ff2400;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+.logo-container h2 {
+  font-size: 2.124rem;
+  font-weight: bold;
+}
+
+/*
+Social Links
+ */
+.social-links-container {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  cursor: pointer;
+}
+.social-links-container h2 {
+  color: rgba(255, 36, 0, 0.4);
+  font-size: 1.31rem;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.social-links-container h2:hover {
+  color: #ff2400;
 }
 
 .home-container {

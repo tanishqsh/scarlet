@@ -1,21 +1,18 @@
 import React from 'react';
 
-const transition = ()=> {
-
-};
-
 const Menu = [
     {displayName:"Home", subtitle:"Know everything about us.", link:"/"},
     {displayName:"About", subtitle:"Why a conceptualization studio?", link:"/about"},
     {displayName:"Services", subtitle:"What all can we do together?", link:"/services"},
     {displayName:"Clients", subtitle:"You are in a good company.", link:"/clients"},
-    {displayName:"Just a message away!", subtitle:"bescarlet.in@gmail.com", link:"mailto:bescarlet.in@gmail.com"}
+    {displayName:"Mail Us", subtitle:"bescarlet.in@gmail.com", link:"mailto:bescarlet.in@gmail.com"},
+    {displayName:"Just a message away!", subtitle:"This will open a WhatsApp chat window with one of our representatives.", link:"mailto:bescarlet.in@gmail.com"}
 ];
 
 
 function BottomPeak(props){
     return(
-        <div className={'bottom-peak-container-primary'}>
+        <div className={`bottom-peak-container-${props.class}`}>
             <div className={'menu'}>
                 {
                     Menu.map(menu => (
@@ -26,6 +23,10 @@ function BottomPeak(props){
                         </a>
                     ))
                 }
+            </div>
+            <div className={'quote'}>
+                <p> It is better to travel well than to arrive. </p>
+                <author> Buddha </author>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import BottomPeak from "../../components/BottomPeak";
 import Frame from "../Frame/Frame";
+import Cursor from "../../components/Cursor";
 
 
 function Home() {

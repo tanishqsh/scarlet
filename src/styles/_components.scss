@@ -60,8 +60,6 @@ Bottom peak styling
     }
   }
 
-
-
 }
 
 .bottom-peak-container-primary{
@@ -185,4 +183,27 @@ Call To Action
   h2:hover {
     color: $primary-color
   }
+}
+
+/*
+Cursor
+ */
+
+@mixin cursor(){
+  position: absolute;
+  width: 50px;
+  top: 0;
+  left:0;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.cursor-primary{
+  @include cursor;
+  background: $primary-color;
+}
+
+.cursor-secondary {
+  @include cursor;
+  background: $secondary-color;
 }

@@ -14,9 +14,19 @@ $tertiary-font-size: 1.31rem;
 $quaternary-font-size: 1.2rem;
 $inactive-primary-color: rgba(255, 36, 0, 0.4);
 $transition: all 0.5s ease-in-out;
+$appear-animation: appear 0.5s ease-in-out;
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 // Heartbeat Animation
-
 @keyframes heartbeat {
   from {
     transform: scale(1);
@@ -26,6 +36,7 @@ $transition: all 0.5s ease-in-out;
   }
 }
 
+// blinking lights
 @keyframes lights {
   from {
     opacity: 1;

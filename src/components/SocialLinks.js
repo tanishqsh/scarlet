@@ -4,9 +4,9 @@ const pills = [
     {name: 'doodlings on instagram', link: 'https://www.instagram.com/be.scarlet/'},
 ];
 
-function SocialLinks(){
+function SocialLinks(props){
     return(
-        <div className={'social-links-container'}>
+        <div className={'social-links-container-'+props.theme}>
                 <h2>
                 { pills.map((pill, i) => (
                     <a target={'_blank'} rel="noopener noreferrer" key={i} href={pill.link}>

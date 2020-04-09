@@ -11,7 +11,7 @@ Studio Concept Styling
   cursor: pointer;
   z-index: 9999;
   display: flex;
-  clip-path: circle(1% at 0);
+  clip-path: circle(0% at 50% 50%);
   justify-content: center;
   align-items: center;
 
@@ -42,7 +42,7 @@ Studio Concept Styling
       @extend #full-circle;
 
       #full-circle {
-        margin-top: -10px;
+        margin-top: -20px;
         height: 100px;
         width: 100px;
         background: $primary-color;
@@ -67,12 +67,11 @@ Studio Concept Styling
 
     }
   }
+}
 
-  &:hover {
-    clip-path: circle(100%);
-    z-index: 10001;
-
-  }
-
-
+.studio-concept-container-active {
+  @extend .studio-concept-container;
+  clip-path: circle(100%);
+  z-index: 10001;
+  transition: $transition;
 }

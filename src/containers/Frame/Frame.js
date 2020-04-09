@@ -2,17 +2,15 @@ import React from 'react';
 import Logo from "../../components/Logo";
 import SocialLinks from "../../components/SocialLinks";
 import CurrentDate from "../../components/CurrentDate";
-import Back from "../../components/Back";
 import CallToAction from "../../components/CallToAction";
 
-function Frame() {
+function Frame(props) {
     return(
         <div className={'frame-container'}>
-            <Logo/>
-            <SocialLinks/>
-            <CurrentDate/>
-            <Back/>
-            <CallToAction/>
+            <Logo theme={props.theme}/>
+            <SocialLinks theme={props.theme}/>
+            <CurrentDate theme={props.theme}/>
+            <CallToAction theme={props.theme}/>
         </div>
     );
 }

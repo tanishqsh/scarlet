@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from "./Logo";
 
 const Menu = [
     {displayName:"Home", subtitle:"Know everything about us.", link:"/"},
@@ -12,7 +13,7 @@ const Menu = [
 
 function BottomPeak(props){
     return(
-        <div className={`bottom-peak-container-${props.class}`}>
+        <div className={`bottom-peak-container-${props.theme}`}>
             <div className={'menu'}>
                 {
                     Menu.map(menu => (

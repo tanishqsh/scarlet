@@ -4,7 +4,7 @@
 /*
 Bottom peak styling
  */
-@mixin bottom-peak-container() {
+@mixin bottom-peak-container($color, $color2) {
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -14,6 +14,7 @@ Bottom peak styling
   cursor: pointer;
   z-index: 10000;
   animation: heartbeat .5s infinite alternate;
+  background: $color;
 
   .menu {
     position: absolute;
@@ -22,24 +23,24 @@ Bottom peak styling
     transition: all 0.5s ease-in-out;
 
     h1 {
-      color: rgba(255, 255, 255, 0.5);
+      color: $color2;
       font-size: $secondary-font-size;
       transition: $transition;
 
       &:hover h3 {
         font-size: $tertiary-font-size;
-        color: $secondary-color;
+        color: $color2;
       }
 
       &:hover{
-        color: $secondary-color;
+        color: $color2;
       }
 
     }
 
     h3 {
       font-size: 0.1px;
-      color: $primary-color;
+      color: $color;
       font-style: italic;
       transition: $transition;
     }
@@ -50,7 +51,7 @@ Bottom peak styling
     width: 30%;
     line-height: 1;
     font-size: $primary-font-size;
-    color: $secondary-color;
+    color: $color2;
     font-weight: bold;
     position: absolute;
     right: 20%;
@@ -65,24 +66,23 @@ Bottom peak styling
 }
 
 .bottom-peak-container-primary{
-  @include bottom-peak-container;
-  background: $primary-color;
+  @include bottom-peak-container($primary-color, $secondary-color);
+
 }
 
 .bottom-peak-container-secondary{
-  @include bottom-peak-container;
-  background: $secondary-color;
+  @include bottom-peak-container($secondary-color, $primary-color);
 }
 
 .bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover{
-  @include bottom-peak-container;
+  @include bottom-peak-container($primary-color, $secondary-color);
   background: $primary-color;
   animation: none;
   clip-path: circle(100%);
 }
 
 .bottom-peak-container-secondary-scrolled, .bottom-peak-container-secondary:hover{
-  @include bottom-peak-container;
+  @include bottom-peak-container($secondary-color, $primary-color);
   background: $secondary-color;
   animation: none;
   clip-path: circle(100%);
@@ -94,7 +94,7 @@ Bottom peak styling
 Current Date Widget
  */
 
-.current-date-container {
+@mixin current-date-container {
   color: $primary-color;
   font-size: $tertiary-font-size;
   position: absolute;
@@ -102,12 +102,20 @@ Current Date Widget
   top: 5%;
 }
 
+.current-date-container-primary{
+  @include current-date-container;
+}
+
+.current-date-container-secondary {
+  @include current-date-container;
+  color: $secondary-color;
+}
+
 /*
 Scarlet Logo
  */
 
-.logo-container {
-  color: $primary-color;
+@mixin logo-container {
   position: absolute;
   right: 10%;
   bottom: 5%;
@@ -117,14 +125,29 @@ Scarlet Logo
     font-size: $secondary-font-size;
     font-weight: bold;
   }
+}
 
+.logo-container-primary {
+  @include logo-container;
+  color: $primary-color;
+  h2 {
+    color: $primary-color;
+  }
+}
+
+.logo-container-secondary {
+  @include logo-container;
+  color: $secondary-color;
+  h2 {
+    color: $secondary-color;
+  }
 }
 
 /*
 Social Links
  */
 
-.social-links-container {
+@mixin social-links-container {
   position: absolute;
   left: 10%;
   top: 5%;
@@ -135,10 +158,26 @@ Social Links
     font-size: $tertiary-font-size;
     font-weight: bold;
     transition: $transition;
-  }
 
-  a:hover {
-    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
+
+  }
+}
+
+.social-links-container-primary {
+  @include social-links-container;
+}
+
+.social-links-container-secondary {
+  @include social-links-container;
+  a {
+    color: $secondary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
@@ -146,7 +185,7 @@ Social Links
 Back Button
  */
 
-.back-container {
+@mixin back-container($color) {
   position: absolute;
   left: 20%;
   bottom: 20%;
@@ -154,7 +193,7 @@ Back Button
 
   h2 {
     font-size: $tertiary-font-size;
-    color: #ffffff;
+    color: $color;
     font-weight: bold;
     transition: $transition;
   }
@@ -162,15 +201,25 @@ Back Button
 
   h2:hover {
     cursor: pointer;
-    color: #fff;
+    color: $color;
   }
+}
+
+// primary background requires secondary color since the close button appears in alt states
+.back-container-primary {
+  @include back-container($secondary-color)
+}
+
+// secondary background requires primary color since the close button appears in alt states
+.back-container-secondary {
+  @include back-container($primary-color)
 }
 
 /*
 Call To Action
  */
 
-.call-to-action-container {
+@mixin call-to-action-container {
   position: absolute;
   left: 10%;
   bottom: 5%;
@@ -187,6 +236,25 @@ Call To Action
     color: $primary-color
   }
 }
+
+.call-to-action-container-primary{
+  @include call-to-action-container;
+}
+
+.call-to-action-container-secondary {
+  @include call-to-action-container;
+
+  h2 {
+    color: $secondary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+
+  }
+}
+
+
 
 /*
 Cursor

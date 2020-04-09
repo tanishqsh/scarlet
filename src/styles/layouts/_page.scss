@@ -1,0 +1,41 @@
+/*
+About Page CSS
+ */
+
+
+@mixin page-container($background, $text-color) {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background;
+
+  .inner-container {
+    display: block;
+  }
+
+  h1 {
+    font-size: $primary-font-size;
+    color: $text-color;
+    font-weight: 800;
+    line-height: 1;
+    cursor: pointer;
+    transition: $transition;
+
+  }
+
+  h3 {
+    font-size: $tertiary-font-size;
+    font-style: italic;
+    color: $text-color;
+  }
+}
+
+.page-container-primary{
+  @include page-container($primary-color, $secondary-color);
+}
+
+.page-container-secondary {
+  @include page-container($secondary-color, $primary-color);
+}

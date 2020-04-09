@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Back() {
+function Back(props) {
     return(
-        <div className={'back-container'}>
-            <h2> Close </h2>
+        <div className={'back-container-'+props.theme}>
+            <h2 onMouseEnter={()=>{props.changeState('')}}> Close </h2>
         </div>
     );
 }

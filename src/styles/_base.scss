@@ -7,6 +7,7 @@
   font-family: 'Crimson Text', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: $appear-animation;
 }
 
 
@@ -20,11 +21,9 @@ a:hover {
   text-decoration: none;
 }
 
-/*
 .alt {
   cursor: pointer;
   line-height: 1;
   font-style: italic;
   animation: lights 1s ease-in-out infinite alternate;
 }
- */

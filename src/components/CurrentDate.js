@@ -25,9 +25,9 @@ const Day = [
     "Saturday"
 ];
 
-function CurrentDate() {
+function CurrentDate(props) {
     return(
-        <div className={'current-date-container'}>
+        <div className={'current-date-container-'+props.theme}>
             {Day[new Date().getDay()]},  {new Date().getDate()} {Months[new Date().getMonth()].name} {new Date().getFullYear() }
         </div>
     );

@@ -13,7 +13,7 @@ Bottom peak styling
   transition: $transition;
   cursor: pointer;
   z-index: 10000;
-  animation: heartbeat 2s infinite;
+  animation: heartbeat .5s infinite alternate;
 
   .menu {
     position: absolute;
@@ -85,6 +85,7 @@ Bottom peak styling
   animation: none;
   clip-path: circle(100%);
 }
+
 
 
 /*

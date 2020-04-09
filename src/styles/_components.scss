@@ -25,6 +25,16 @@ Bottom peak styling
       color: rgba(255, 255, 255, 0.5);
       font-size: $secondary-font-size;
       transition: $transition;
+
+      &:hover h3 {
+        font-size: $tertiary-font-size;
+        color: $secondary-color;
+      }
+
+      &:hover{
+        color: $secondary-color;
+      }
+
     }
 
     h3 {
@@ -34,14 +44,6 @@ Bottom peak styling
       transition: $transition;
     }
 
-    h1:hover h3 {
-      font-size: $tertiary-font-size;
-      color: $secondary-color;
-    }
-
-    h1:hover{
-      color: $secondary-color;
-    }
   }
 
   .quote {

@@ -1,0 +1,78 @@
+/*
+Studio Concept Styling
+ */
+
+.studio-concept-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: $primary-color;
+  transition: $transition;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  clip-path: circle(1% at 0);
+  justify-content: center;
+  align-items: center;
+
+  .content-wrapper {
+    width: 60%;
+
+    h1 {
+      font-size: $primary-font-size;
+      color: white;
+    }
+
+    p {
+      color: $secondary-color;
+      text-align: justify;
+      font-size: $quaternary-font-size;
+    }
+
+    #full-circle{
+      height: 120px;
+      width: 120px;
+      margin: 10px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0px 0px 10px #AAA9A8;
+    }
+
+    #partial-circle {
+      @extend #full-circle;
+
+      #full-circle {
+        margin-top: -10px;
+        height: 100px;
+        width: 100px;
+        background: $primary-color;
+        animation: circle-eye 1s ease-in-out infinite alternate;
+        transition: $transition;
+
+        &:hover {
+          margin: 10px;
+          animation: none;
+        }
+      }
+
+      //local animation, thus not created in the variables file because it can't be used anywhere else.
+      @keyframes circle-eye {
+        from {
+          margin-top: -10px;
+        }
+        to {
+          margin-top: 30px
+        }
+      }
+
+    }
+  }
+
+  &:hover {
+    clip-path: circle(100%);
+    z-index: 10001;
+
+  }
+
+
+}

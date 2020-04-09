@@ -15,6 +15,14 @@
     color: $primary-color;
     font-weight: 800;
     line-height: 1;
+    cursor: pointer;
+    transition: $transition;
+
+    span {
+      &:hover + .studio-concept-container {
+        clip-path: circle(100%);
+      }
+    }
   }
 
   h3 {

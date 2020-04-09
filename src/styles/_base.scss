@@ -10,7 +10,6 @@
   animation: $appear-animation;
 }
 
-
 a, a:focus {
   color: $primary-color;
   text-decoration: none;
@@ -26,4 +25,9 @@ a:hover {
   line-height: 1;
   font-style: italic;
   animation: lights 1s ease-in-out infinite alternate;
+  border-bottom: 0.001px solid $primary-color;
+
+}
+.alt:hover {
+  border-bottom: 5px solid $primary-color;
 }

@@ -1,12 +1,13 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 
 function Logo(props){
     return(
         <div className={'logo-container-'+props.theme}>
-            <a href={'/'}>
+            <Link to={'/'}>
                 <h2> Scarlet. </h2>
-            </a>
+            </Link>
         </div>
     );
 }

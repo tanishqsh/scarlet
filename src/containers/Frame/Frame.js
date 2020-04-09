@@ -7,9 +7,9 @@ import CallToAction from "../../components/CallToAction";
 function Frame(props) {
     return(
         <div className={'frame-container'}>
-            <Logo theme={props.theme}/>
-            <SocialLinks theme={props.theme}/>
             <CurrentDate theme={props.theme}/>
+            <SocialLinks theme={props.theme}/>
+            <Logo theme={props.theme}/>
             <CallToAction theme={props.theme}/>
         </div>
     );

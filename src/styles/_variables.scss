@@ -14,12 +14,12 @@ $tertiary-font-size: 1.31rem;
 $quaternary-font-size: 1.2rem;
 $inactive-primary-color: rgba(255, 36, 0, 0.4);
 $transition: all 0.5s ease-in-out;
-$appear-animation: appear 0.5s ease-in-out;
+$appear-animation: appear 0.3s ease-in-out;
 
 
 @keyframes appear {
   from {
-    opacity: 0;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -42,6 +42,6 @@ $appear-animation: appear 0.5s ease-in-out;
     opacity: 1;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }

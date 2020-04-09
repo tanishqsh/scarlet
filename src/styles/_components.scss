@@ -173,7 +173,7 @@ Social Links
 .social-links-container-secondary {
   @include social-links-container;
   a {
-    color: $secondary-color;
+    color: rgba(255, 255, 255, 0.5);
 
     &:hover {
       color: $secondary-color;
@@ -245,7 +245,7 @@ Call To Action
   @include call-to-action-container;
 
   h2 {
-    color: $secondary-color;
+    color: rgba(255, 255, 255, 0.5);
 
     &:hover {
       color: $secondary-color;

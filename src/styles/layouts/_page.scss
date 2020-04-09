@@ -11,10 +11,6 @@ About Page CSS
   align-items: center;
   background: $background;
 
-  .inner-container {
-    display: block;
-  }
-
   h1 {
     font-size: $primary-font-size;
     color: $text-color;
@@ -26,8 +22,8 @@ About Page CSS
   }
 
   h3 {
-    font-size: $tertiary-font-size;
-    font-style: italic;
+    text-align: justify;
+    font-size: $quaternary-font-size;
     color: $text-color;
   }
 }

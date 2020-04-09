@@ -4,13 +4,13 @@
 
 @keyframes heartbeat {
   0% {
-    transform: scaleY(1);
+    transform: scale(1);
   }
   50% {
-    transform: scaleY(1.05);
+    transform: scale(1.01);
   }
   100% {
-    transform: scaleY(1);
+    transform: scale(1);
   }
 }
 * {
@@ -41,7 +41,6 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -93,7 +92,6 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -145,7 +143,6 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -199,7 +196,6 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  -webkit-clip-path: circle(10% at 50% 105%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -252,6 +248,7 @@ Current Date Widget
  */
 .current-date-container {
   color: #ff2400;
+  font-size: 1.31rem;
   position: absolute;
   right: 10%;
   top: 5%;
@@ -265,6 +262,7 @@ Scarlet Logo
   position: absolute;
   right: 10%;
   bottom: 5%;
+  cursor: pointer;
 }
 .logo-container h2 {
   font-size: 2.124rem;
@@ -280,13 +278,52 @@ Social Links
   top: 5%;
   cursor: pointer;
 }
-.social-links-container h2 {
+.social-links-container a {
   color: rgba(255, 36, 0, 0.4);
   font-size: 1.31rem;
   font-weight: bold;
   transition: all 0.5s ease-in-out;
 }
-.social-links-container h2:hover {
+.social-links-container a:hover {
+  color: #ff2400;
+}
+
+/*
+Back Button
+ */
+.back-container {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  z-index: 1000000;
+}
+.back-container h2 {
+  font-size: 1.31rem;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.back-container h2:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/*
+Call To Action
+ */
+.call-to-action-container {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  cursor: pointer;
+}
+.call-to-action-container h2 {
+  font-size: 2.124rem;
+  color: rgba(255, 36, 0, 0.4);
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.call-to-action-container h2:hover {
   color: #ff2400;
 }
 

@@ -10,7 +10,6 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  -webkit-clip-path: circle(10% at 50% 105%);
   transition: $transition;
   cursor: pointer;
   z-index: 10000;
@@ -96,6 +95,7 @@ Current Date Widget
 
 .current-date-container {
   color: $primary-color;
+  font-size: $tertiary-font-size;
   position: absolute;
   right:10%;
   top: 5%;
@@ -110,6 +110,7 @@ Scarlet Logo
   position: absolute;
   right: 10%;
   bottom: 5%;
+  cursor: pointer;
 
   h2 {
     font-size: $secondary-font-size;
@@ -128,14 +129,60 @@ Social Links
   top: 5%;
   cursor: pointer;
 
-  h2 {
+  a {
     color: $inactive-primary-color;
     font-size: $tertiary-font-size;
     font-weight: bold;
     transition: $transition;
   }
 
-  h2:hover {
+  a:hover {
     color: $primary-color;
+  }
+}
+
+/*
+Back Button
+ */
+
+.back-container {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  z-index: 1000000;
+
+  h2 {
+    font-size: $tertiary-font-size;
+    color: #ffffff;
+    font-weight: bold;
+    transition: $transition;
+  }
+
+
+  h2:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+/*
+Call To Action
+ */
+
+.call-to-action-container {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  cursor: pointer;
+
+  h2 {
+    font-size: $secondary-font-size;
+    color: $inactive-primary-color;
+    font-weight: bold;
+    transition: $transition;
+  }
+
+  h2:hover {
+    color: $primary-color
   }
 }

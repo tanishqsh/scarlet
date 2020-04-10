@@ -3,8 +3,6 @@ import BottomPeak from "../../components/BottomPeak";
 import Back from "../../components/Back";
 import Astronaut from "../../images/astronaut.png";
 import {Link} from "react-router-dom";
-import Logo from "../../components/Logo";
-import CurrentDate from "../../components/CurrentDate";
 import Frame from "../Frame/Frame";
 
 const services = [

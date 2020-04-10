@@ -1,6 +1,4 @@
 import React from 'react';
-import Logo from "./Logo";
-import {Link} from "react-router-dom";
 
 const Menu = [
     {displayName:"Home", subtitle:"Know everything about us.", link:"/"},

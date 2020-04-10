@@ -1,6 +1,5 @@
 import React from 'react';
 import Frame from "../Frame/Frame";
-import BottomPeak from "../../components/BottomPeak";
 import Back from "../../components/Back";
 import CoffeeCup from '../../images/coffee.png';
 

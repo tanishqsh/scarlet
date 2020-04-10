@@ -89,6 +89,14 @@ Bottom peak styling
 }
 
 
+@media (max-width: 640px) {
+  .bottom-peak-container-primary{
+  @include bottom-peak-container($primary-color, $secondary-color);
+    clip-path: circle(10% at 100% 70%);
+  }
+}
+
+
 
 /*
 Current Date Widget

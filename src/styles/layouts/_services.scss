@@ -10,17 +10,18 @@ Services page styling
   }
 
   .content-outer {
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 
     .product-service-wrapper {
       margin-left: 100px;
       text-align: left;
-      display: block;
       overflow: visible;
 
       .product-service {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         width: 75%;
         overflow: initial;
       }
@@ -28,32 +29,53 @@ Services page styling
 
     h1 {
       line-height: 1.2;
-      opacity: 0.8;
       margin: 0;
+      opacity: 0.9;
       overflow: visible;
       padding: 0;
       font-size: $secondary-font-size;
       transition: $transition;
+      position: relative;
 
       &:hover{
         opacity: 1;
       }
+
+      &::before {
+        display: inline-block;
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        border-radius: 100px;
+        background: $secondary-color;
+        transition: $transition;
+      }
+
+      &:hover::before {
+        width: 100px;
+      }
+
     }
 
     h3 {
-      font-size: $tertiary-font-size;
+      padding-top: 10px;
+      text-align: left;
+      font-size: $quaternary-font-size;
       font-style: italic;
     }
 
   }
 
   img {
-    opacity: 0.5;
+    opacity: 0.8;
     transition: $transition;
     animation: up-down 0.6s infinite alternate;
 
     &:hover{
-      opacity: 0.8;
+      opacity: 1;
     }
   }
 
@@ -68,9 +90,15 @@ Services page styling
   }
 
   .quote-container {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     h1 {
       width: 60%;
-      opacity: 0.8;
+      opacity: 1;
       text-align: left;
       font-size: $secondary-font-size;
       transition: $transition;
@@ -86,8 +114,4 @@ Services page styling
     }
   }
 
-  .expanded-explanation {
-
   }
-
-}

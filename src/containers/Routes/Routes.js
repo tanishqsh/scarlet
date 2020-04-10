@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
+import Clients from "../Clients/Clients";
 
 function Routes() {
     return(
@@ -23,6 +24,9 @@ function Routes() {
                 </Route>
                 <Route exact path={'/services'}>
                     <Services/>
+                </Route>
+                <Route exact path={'/clients'}>
+                    <Clients/>
                 </Route>
             </Switch>
         </Router>

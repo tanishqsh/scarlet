@@ -897,4 +897,83 @@ Contact Page Styling
   transform: rotateZ(-35deg);
 }
 
+/*
+Clients Page Styling
+ */
+.clients-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff2400;
+}
+.clients-container h1 {
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.clients-container h3 {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.clients-container .cta-container h2 {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.clients-container .cta-container h2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.clients-container .cta-container h2:hover::before {
+  width: 100px;
+}
+.clients-container .cta-container h2:hover {
+  color: #fff;
+}
+.clients-container .content-outer .center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-container .content-outer .center-center h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.124rem;
+}
+.clients-container .content-outer .center-center h3 {
+  font-size: 1.31rem;
+  font-style: italic;
+}
+.clients-container .content-outer .client-list-wrapper .row {
+  height: 600px;
+  background: url("../../images/clients2.png") repeat top;
+  background-size: cover;
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.2);
+  animation: client-flow 150s infinite linear;
+}
+@keyframes client-flow {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 10000%;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */

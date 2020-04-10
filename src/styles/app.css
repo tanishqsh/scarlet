@@ -2,6 +2,12 @@
   font-size: 16px;
 }
 
+@media (max-width: 640px) {
+  :root {
+    margin: 30px;
+    font-size: 10px;
+  }
+}
 @keyframes appear {
   from {
     opacity: 0.2;
@@ -49,13 +55,25 @@ a:hover {
 .alt {
   cursor: pointer;
   line-height: 1;
+  position: relative;
   font-style: italic;
   animation: lights 1s ease-in-out infinite alternate;
   border-bottom: 0.001px solid #ff2400;
 }
-
-.alt:hover {
-  border-bottom: 5px solid #ff2400;
+.alt::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #ff2400;
+  transition: all 0.5s ease-in-out;
+}
+.alt:hover::before {
+  width: 100px;
 }
 
 /*
@@ -567,7 +585,7 @@ About Page CSS
   font-size: 3.43rem;
   color: #fff;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.1;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -577,13 +595,29 @@ About Page CSS
   color: #fff;
 }
 .page-container-primary .cta-container h2 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.page-container-primary .cta-container h2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.page-container-primary .cta-container h2::after {
-  content: url("../../images/arrow-right.svg");
+.page-container-primary .cta-container h2:hover::before {
+  width: 100px;
+}
+.page-container-primary .cta-container h2:hover {
   color: #fff;
-  border-top: 10px solid #ffffff;
 }
 
 .page-container-secondary {
@@ -598,7 +632,7 @@ About Page CSS
   font-size: 3.43rem;
   color: #ff2400;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.1;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -608,13 +642,233 @@ About Page CSS
   color: #ff2400;
 }
 .page-container-secondary .cta-container h2 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.page-container-secondary .cta-container h2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.page-container-secondary .cta-container h2::after {
-  content: url("../../images/arrow-right.svg");
+.page-container-secondary .cta-container h2:hover::before {
+  width: 100px;
+}
+.page-container-secondary .cta-container h2:hover {
   color: #fff;
-  border-top: 10px solid #ffffff;
+}
+
+/*
+Services page styling
+ */
+.services-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff2400;
+}
+.services-container h1 {
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.services-container h3 {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.services-container .cta-container h2 {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.services-container .cta-container h2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.services-container .cta-container h2:hover::before {
+  width: 100px;
+}
+.services-container .cta-container h2:hover {
+  color: #fff;
+}
+.services-container .show-overflow {
+  overflow: visible;
+}
+.services-container .content-outer {
+  display: flex;
+  justify-content: flex-end;
+}
+.services-container .content-outer .product-service-wrapper {
+  margin-left: 100px;
+  text-align: left;
+  display: block;
+  overflow: visible;
+}
+.services-container .content-outer .product-service-wrapper .product-service {
+  margin-bottom: 100px;
+  width: 75%;
+  overflow: initial;
+}
+.services-container .content-outer h1 {
+  line-height: 1.2;
+  opacity: 0.8;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  font-size: 2.124rem;
+  transition: all 0.5s ease-in-out;
+}
+.services-container .content-outer h1:hover {
+  opacity: 1;
+}
+.services-container .content-outer h3 {
+  font-size: 1.31rem;
+  font-style: italic;
+}
+.services-container img {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  animation: up-down 0.6s infinite alternate;
+}
+.services-container img:hover {
+  opacity: 0.8;
+}
+@keyframes up-down {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+.services-container .quote-container h1 {
+  width: 60%;
+  opacity: 0.8;
+  text-align: left;
+  font-size: 2.124rem;
+  transition: all 0.5s ease-in-out;
+}
+.services-container .quote-container h1:hover {
+  opacity: 1;
+}
+.services-container .quote-container h3 {
+  font-size: 1.31rem;
+  font-style: italic;
+}
+/*
+Contact Page Styling
+ */
+.contact-page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff2400;
+}
+.contact-page-container h1 {
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.contact-page-container h3 {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.contact-page-container .cta-container h2 {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.contact-page-container .cta-container h2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.contact-page-container .cta-container h2:hover::before {
+  width: 100px;
+}
+.contact-page-container .cta-container h2:hover {
+  color: #fff;
+}
+.contact-page-container h1 {
+  position: relative;
+}
+.contact-page-container h1::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.contact-page-container h1:hover::before {
+  width: 100px;
+}
+.contact-page-container h1::after {
+  content: "let's grab a cup of coffee?";
+  font-size: 3.43rem;
+  color: #fff;
+  position: relative;
+  font-weight: 800;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.contact-page-container h1:hover::after {
+  content: "bescarlet.in@gmail.com";
+}
+.contact-page-container img {
+  position: absolute;
+  bottom: -15%;
+  left: 42%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.contact-page-container img:hover {
+  transform: rotateZ(-35deg);
 }
 
 /*# sourceMappingURL=app.css.map */

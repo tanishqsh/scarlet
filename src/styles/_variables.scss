@@ -16,6 +16,13 @@ $inactive-primary-color: rgba(255, 36, 0, 0.4);
 $transition: all 0.5s ease-in-out;
 $appear-animation: appear 0.3s ease-in-out;
 
+@media (max-width: 640px) {
+  :root{
+    margin: 30px;
+    font-size: 10px;
+  }
+}
+
 
 @keyframes appear {
   from {

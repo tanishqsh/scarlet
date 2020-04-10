@@ -15,7 +15,7 @@ About Page CSS
     font-size: $primary-font-size;
     color: $text-color;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.1;
     cursor: pointer;
     transition: $transition;
 
@@ -29,14 +29,32 @@ About Page CSS
 
   .cta-container {
     h2 {
-      color: $secondary-color;
-      transition: $transition;
-    }
+      color: rgba(255,255,255,0.7);
+      transition: all 0.1s linear;
+      position: relative;
+      cursor: pointer;
+      padding-bottom: 10px;
 
-    h2::after {
-      content: url("../../images/arrow-right.svg");
-      color: $secondary-color;
-      border-top: 10px solid #ffffff;
+      &::before {
+        display: inline-block;
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        border-radius: 100px;
+        background: $secondary-color;
+        transition: $transition;
+      }
+
+      &:hover::before {
+        width: 100px;
+      }
+
+      &:hover {
+        color: $secondary-color;
+      }
     }
   }
 }

@@ -2,6 +2,13 @@ import React from 'react';
 import Frame from "../Frame/Frame";
 import BottomPeak from "../../components/BottomPeak";
 import Back from "../../components/Back";
+import {Link} from "react-router-dom";
+
+const containerLinks = [
+    {name: 'Our services', link:'/services'},
+    {name: 'People behind Scarlet.', link:'/about'},
+    {name: 'Our philosophy', link:'/about'},
+];
 
 function About() {
     return(
@@ -18,7 +25,9 @@ function About() {
                 </div>
                 <div className={'col-sm-1'}/>
                 <div className={'col-sm-2 cta-container'}>
-                    <h2> Our services </h2>
+                    {containerLinks.map((link,i) => (
+                        <Link key={i} to={link.link}> <h2> {link.name} </h2> </Link>
+                    ))}
                 </div>
                 <div className={'col-sm-3'}>
                 </div>

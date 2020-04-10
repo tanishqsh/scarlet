@@ -1,0 +1,55 @@
+/*
+Contact Page Styling
+ */
+
+//contact us page
+.contact-page-container {
+  @include page-container($primary-color, $secondary-color);
+
+  h1 {
+    position: relative;
+    &::before {
+      display: inline-block;
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 100px;
+      background: $secondary-color;
+      transition: $transition;
+    }
+
+    &:hover::before {
+      width: 100px;
+    }
+  }
+
+  h1::after {
+    content: 'let\'s grab a cup of coffee?';
+    font-size: $primary-font-size;
+    color: $secondary-color;
+    position: relative;
+    font-weight: 800;
+    line-height: 1.1;
+    cursor: pointer;
+    transition: $transition;
+  }
+
+  h1:hover::after {
+    content: 'bescarlet.in@gmail.com';
+  }
+
+  img {
+    position: absolute;
+    bottom:-15%;
+    left: 42%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: rotateZ(-35deg);
+    }
+  }
+}

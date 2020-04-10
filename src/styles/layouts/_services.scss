@@ -1,0 +1,93 @@
+/*
+Services page styling
+ */
+
+.services-container {
+  @include page-container($primary-color, $secondary-color);
+
+  .show-overflow {
+    overflow: visible;
+  }
+
+  .content-outer {
+    display: flex;
+    justify-content: flex-end;
+
+    .product-service-wrapper {
+      margin-left: 100px;
+      text-align: left;
+      display: block;
+      overflow: visible;
+
+      .product-service {
+        margin-bottom: 100px;
+        width: 75%;
+        overflow: initial;
+      }
+    }
+
+    h1 {
+      line-height: 1.2;
+      opacity: 0.8;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      font-size: $secondary-font-size;
+      transition: $transition;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    h3 {
+      font-size: $tertiary-font-size;
+      font-style: italic;
+    }
+
+  }
+
+  img {
+    opacity: 0.5;
+    transition: $transition;
+    animation: up-down 0.6s infinite alternate;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+
+  //local animation
+  @keyframes up-down {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+  .quote-container {
+    h1 {
+      width: 60%;
+      opacity: 0.8;
+      text-align: left;
+      font-size: $secondary-font-size;
+      transition: $transition;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    h3 {
+      font-size: $tertiary-font-size;
+      font-style: italic;
+    }
+  }
+
+  .expanded-explanation {
+
+  }
+
+}

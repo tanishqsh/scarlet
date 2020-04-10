@@ -14,11 +14,11 @@ function StudioConcept(props) {
                            <div id={'full-circle'}/>
                        </div>
                    </div>
-                   <div className={'col-sm-6'}>
-                       <h1> A concept <span className={'alt'}> studio</span>? </h1>
+                   <div className={'col-sm-5'}>
+                       <h1> A concept <span className={'alt'}> <br/> studio</span>? </h1>
                        <p> {content} </p>
                    </div>
-                   <div className={"col-sm-2"}/>
+                   <div className={"col-sm-3"}/>
                </div>
 
            </div>

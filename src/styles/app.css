@@ -576,6 +576,15 @@ About Page CSS
   font-size: 1.2rem;
   color: #fff;
 }
+.page-container-primary .cta-container h2 {
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.page-container-primary .cta-container h2::after {
+  content: url("../../images/arrow-right.svg");
+  color: #fff;
+  border-top: 10px solid #ffffff;
+}
 
 .page-container-secondary {
   height: 100vh;
@@ -597,6 +606,15 @@ About Page CSS
   text-align: justify;
   font-size: 1.2rem;
   color: #ff2400;
+}
+.page-container-secondary .cta-container h2 {
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.page-container-secondary .cta-container h2::after {
+  content: url("../../images/arrow-right.svg");
+  color: #fff;
+  border-top: 10px solid #ffffff;
 }
 
 /*# sourceMappingURL=app.css.map */

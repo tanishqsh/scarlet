@@ -26,6 +26,19 @@ About Page CSS
     font-size: $quaternary-font-size;
     color: $text-color;
   }
+
+  .cta-container {
+    h2 {
+      color: $secondary-color;
+      transition: $transition;
+    }
+
+    h2::after {
+      content: url("../../images/arrow-right.svg");
+      color: $secondary-color;
+      border-top: 10px solid #ffffff;
+    }
+  }
 }
 
 .page-container-primary{

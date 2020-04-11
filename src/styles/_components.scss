@@ -124,10 +124,15 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
+  transition: $transition;
 
   h2 {
     font-size: $secondary-font-size;
     font-weight: bold;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 

@@ -354,11 +354,15 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
   color: #ff2400;
 }
 .logo-container-primary h2 {
   font-size: 2.124rem;
   font-weight: bold;
+}
+.logo-container-primary:hover {
+  transform: scale(1.1);
 }
 .logo-container-primary h2 {
   color: #ff2400;
@@ -369,11 +373,15 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
   color: #fff;
 }
 .logo-container-secondary h2 {
   font-size: 2.124rem;
   font-weight: bold;
+}
+.logo-container-secondary:hover {
+  transform: scale(1.1);
 }
 .logo-container-secondary h2 {
   color: #fff;

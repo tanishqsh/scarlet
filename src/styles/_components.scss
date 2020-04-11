@@ -96,6 +96,7 @@ Current Date Widget
 
 @mixin current-date-container {
   color: $primary-color;
+  cursor: pointer;
   font-size: $tertiary-font-size;
   position: absolute;
   right:10%;
@@ -104,10 +105,13 @@ Current Date Widget
 
 .current-date-container-primary{
   @include current-date-container;
+  @include underline-text($primary-color);
+
 }
 
 .current-date-container-secondary {
   @include current-date-container;
+  @include underline-text($secondary-color);
   color: $secondary-color;
 }
 

@@ -10,7 +10,7 @@
 }
 @keyframes appear {
   from {
-    transform: translateY(10px);
+    transform: translateY(-10px);
     opacity: 0.2;
   }
   to {
@@ -54,6 +54,9 @@ a:hover {
   text-decoration: none;
 }
 
+/*
+Underline Text
+ */
 .alt {
   cursor: pointer;
   line-height: 1;
@@ -296,19 +299,51 @@ Current Date Widget
  */
 .current-date-container-primary {
   color: #ff2400;
+  cursor: pointer;
   font-size: 1.31rem;
   position: absolute;
   right: 10%;
   top: 5%;
 }
+.current-date-container-primary::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #ff2400;
+  transition: all 0.5s ease-in-out;
+}
+.current-date-container-primary:hover::before {
+  width: 100px;
+}
 
 .current-date-container-secondary {
   color: #ff2400;
+  cursor: pointer;
   font-size: 1.31rem;
   position: absolute;
   right: 10%;
   top: 5%;
   color: #fff;
+}
+.current-date-container-secondary::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.current-date-container-secondary:hover::before {
+  width: 100px;
 }
 
 /*
@@ -668,7 +703,7 @@ About Page CSS
   width: 0;
   height: 3px;
   border-radius: 100px;
-  background: #fff;
+  background: #ff2400;
   transition: all 0.5s ease-in-out;
 }
 .page-container-secondary .cta-container h2:hover::before {

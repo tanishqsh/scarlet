@@ -20,14 +20,12 @@ a:hover {
   text-decoration: none;
 }
 
-.alt {
-  cursor: pointer;
-  line-height: 1;
-  position: relative;
-  font-style: italic;
-  animation: lights 1s ease-in-out infinite alternate;
-  border-bottom: 0.001px solid $primary-color;
 
+/*
+Underline Text
+ */
+
+@mixin underline-text($color) {
   &::before {
     display: inline-block;
     content:'';
@@ -37,13 +35,22 @@ a:hover {
     width: 0;
     height: 3px;
     border-radius: 100px;
-    background: $primary-color;
+    background: $color ;
     transition: $transition;
   }
 
   &:hover::before {
     width: 100px;
   }
-
 }
 
+.alt {
+  @include underline-text($primary-color);
+  cursor: pointer;
+  line-height: 1;
+  position: relative;
+  font-style: italic;
+  animation: lights 1s ease-in-out infinite alternate;
+  border-bottom: 0.001px solid $primary-color;
+
+}

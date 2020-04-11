@@ -35,22 +35,7 @@ About Page CSS
       cursor: pointer;
       padding-bottom: 10px;
 
-      &::before {
-        display: inline-block;
-        content:'';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 3px;
-        border-radius: 100px;
-        background: $secondary-color;
-        transition: $transition;
-      }
-
-      &:hover::before {
-        width: 100px;
-      }
+      @include underline-text($text-color);
 
       &:hover {
         color: $secondary-color;

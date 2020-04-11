@@ -313,8 +313,8 @@ Scarlet Logo
  */
 .logo-container-primary {
   position: absolute;
-  right: 10%;
-  bottom: 5%;
+  left: 10%;
+  top: 5%;
   cursor: pointer;
   color: #ff2400;
 }
@@ -328,8 +328,8 @@ Scarlet Logo
 
 .logo-container-secondary {
   position: absolute;
-  right: 10%;
-  bottom: 5%;
+  left: 10%;
+  top: 5%;
   cursor: pointer;
   color: #fff;
 }
@@ -346,8 +346,8 @@ Social Links
  */
 .social-links-container-primary {
   position: absolute;
-  left: 10%;
-  top: 5%;
+  right: 10%;
+  bottom: 5%;
   cursor: pointer;
 }
 .social-links-container-primary a {
@@ -362,8 +362,8 @@ Social Links
 
 .social-links-container-secondary {
   position: absolute;
-  left: 10%;
-  top: 5%;
+  right: 10%;
+  bottom: 5%;
   cursor: pointer;
 }
 .social-links-container-secondary a {
@@ -540,29 +540,32 @@ Studio Concept Styling
   text-align: justify;
   font-size: 1.2rem;
 }
-.studio-concept-container .content-wrapper #full-circle, .studio-concept-container-active .content-wrapper #full-circle, .studio-concept-container .content-wrapper #partial-circle, .studio-concept-container-active .content-wrapper #partial-circle {
+.studio-concept-container .content-wrapper #full-circle, .studio-concept-container-active .content-wrapper #full-circle {
   height: 120px;
   width: 120px;
   margin: 10px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0px 0px 10px #AAA9A8;
+  box-shadow: 0px 0px 2px #AAA9A8;
 }
-.studio-concept-container .content-wrapper #partial-circle #full-circle, .studio-concept-container-active .content-wrapper #partial-circle #full-circle, .studio-concept-container .content-wrapper #partial-circle #partial-circle, .studio-concept-container-active .content-wrapper #partial-circle #partial-circle {
-  margin-top: -20px;
+.studio-concept-container .content-wrapper #partial-circle, .studio-concept-container-active .content-wrapper #partial-circle {
+  position: absolute;
   height: 100px;
+  margin: 10px;
   width: 100px;
+  border-radius: 50%;
   background: #ff2400;
   animation: circle-eye 1s ease-in-out infinite alternate;
   transition: all 0.5s ease-in-out;
 }
-.studio-concept-container .content-wrapper #partial-circle #full-circle:hover, .studio-concept-container-active .content-wrapper #partial-circle #full-circle:hover, .studio-concept-container .content-wrapper #partial-circle #partial-circle:hover, .studio-concept-container-active .content-wrapper #partial-circle #partial-circle:hover {
+.studio-concept-container .content-wrapper #partial-circle:hover, .studio-concept-container-active .content-wrapper #partial-circle:hover {
   margin: 10px;
+  transition: all 0.5s ease-in-out;
   animation: none;
 }
 @keyframes circle-eye {
   from {
-    margin-top: -10px;
+    margin-top: -150px;
   }
   to {
     margin-top: 30px;
@@ -966,7 +969,7 @@ Clients Page Styling
   font-style: italic;
 }
 .clients-container .content-outer .client-list-wrapper .row {
-  height: 600px;
+  height: 550px;
   background: url("../../images/clients2.png") repeat top;
   background-size: cover;
   box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.2);

@@ -10,8 +10,8 @@ function StudioConcept(props) {
                <div className={'row'}>
                    <div className={'col-sm-4'}>
                        <div id={'full-circle'}/>
-                       <div id={'partial-circle'}>
-                           <div id={'full-circle'}/>
+                       <div id={'full-circle'}>
+                           <div id={'partial-circle'}/>
                        </div>
                    </div>
                    <div className={'col-sm-5'}>

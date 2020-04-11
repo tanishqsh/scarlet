@@ -1,0 +1,122 @@
+/*
+Mobile Queries
+ */
+@media (max-width: 640px) {
+
+
+  //mobile menu
+  .bottom-peak-container-primary{
+    clip-path: circle(5% at 0% 75%);
+
+    .menu {
+      h1 {
+        margin-bottom: 20px;
+
+        h3 {
+          color: $secondary-color !important;
+          font-size: $tertiary-font-size !important;
+        }
+      }
+
+    }
+    .quote {
+      display: none;
+    }
+  }
+
+  .bottom-peak-container-secondary{
+    clip-path: circle(5% at 0% 75%);
+
+    .menu {
+      margin-bottom: 50px;
+      h1 {
+        margin-bottom: 20px;
+
+        h3 {
+          color: $primary-color !important;
+          font-size: $tertiary-font-size !important;
+        }
+      }
+
+    }
+    .quote {
+      display: none;
+    }
+  }
+
+
+
+  /*
+  Back Container
+   */
+  // primary background requires secondary color since the close button appears in alt states
+  .back-container-primary {
+    @include back-container($secondary-color);
+    h2 {
+      font-size: $secondary-font-size;
+    }
+  }
+
+  // secondary background requires primary color since the close button appears in alt states
+  .back-container-secondary {
+    @include back-container($primary-color);
+    h2 {
+      font-size: $secondary-font-size;
+    }
+  }
+
+
+
+
+  /*
+  Contact Page Container - Mobile
+   */
+  .contact-page-container {
+    justify-content: left;
+    padding: 30px;
+
+    h1 {
+      text-align: left;
+    }
+
+    h1::after{
+      font-size: $secondary-font-size;
+    }
+
+    img {
+      top: 30%;
+      left: 80%;
+    }
+  }
+
+
+  /*
+  About Page
+   */
+
+  .page-container-primary{
+    padding: 0px 50px 50px 50px;
+    margin-top:-50px;
+
+    .cta-container {
+      z-index: 999999999;
+      margin-top: 30px;
+    }
+
+  }
+
+  /*
+  Services Page
+   */
+
+  .services-container {
+    display: block;
+    margin-top: -50px;
+
+    .product-service-wrapper{
+      margin: 0;
+      z-index: calc(999999*9);
+    }
+  }
+
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const pills = [
-    {name: 'instagram', link: 'https://www.instagram.com/be.scarlet/'},
+    {name: 'Instagram', link: 'https://www.instagram.com/be.scarlet/'},
 ];
 
 function SocialLinks(props){

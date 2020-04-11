@@ -5,13 +5,16 @@
 @media (max-width: 640px) {
   :root {
     font-size: 10px;
+    background: #ff2400 !important;
   }
 }
 @keyframes appear {
   from {
+    transform: translateY(10px);
     opacity: 0.2;
   }
   to {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -38,7 +41,7 @@
   font-family: "Crimson Text", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: appear 0.3s ease-in-out;
+  animation: appear 1s ease-in-out;
 }
 
 a, a:focus {
@@ -559,7 +562,6 @@ Studio Concept Styling
   transition: all 0.5s ease-in-out;
 }
 .studio-concept-container .content-wrapper #partial-circle:hover, .studio-concept-container-active .content-wrapper #partial-circle:hover {
-  margin: 10px;
   transition: all 0.5s ease-in-out;
   animation: none;
 }
@@ -729,7 +731,6 @@ Services page styling
   overflow: visible;
 }
 .services-container .content-outer {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -795,7 +796,6 @@ Services page styling
   }
 }
 .services-container .quote-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -14,20 +14,23 @@ $tertiary-font-size: 1.31rem;
 $quaternary-font-size: 1.2rem;
 $inactive-primary-color: rgba(255, 36, 0, 0.4);
 $transition: all 0.5s ease-in-out;
-$appear-animation: appear 0.3s ease-in-out;
+$appear-animation: appear 1s ease-in-out;
 
 @media (max-width: 640px) {
   :root{
     font-size: 10px;
+    background: $primary-color !important;
   }
 }
 
 
 @keyframes appear {
   from {
+    transform: translateY(10px);
     opacity: 0.2;
   }
   to {
+    transform: translateY(0px);
     opacity: 1;
   }
 }

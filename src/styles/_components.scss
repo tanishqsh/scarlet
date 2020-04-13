@@ -105,8 +105,6 @@ Current Date Widget
 
 .current-date-container-primary{
   @include current-date-container;
-  @include underline-text($primary-color);
-
 }
 
 .current-date-container-secondary {

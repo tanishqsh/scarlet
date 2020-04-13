@@ -1,0 +1,33 @@
+[debug] [2020-04-13T10:52:51.682Z] ----------------------------------------------------------------------
+[debug] [2020-04-13T10:52:51.684Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-04-13T10:52:51.685Z] CLI Version:   8.0.2
+[debug] [2020-04-13T10:52:51.685Z] Platform:      darwin
+[debug] [2020-04-13T10:52:51.685Z] Node Version:  v12.16.1
+[debug] [2020-04-13T10:52:51.686Z] Time:          Mon Apr 13 2020 16:22:51 GMT+0530 (India Standard Time)
+[debug] [2020-04-13T10:52:51.686Z] ----------------------------------------------------------------------
+[debug] [2020-04-13T10:52:51.686Z] 
+[debug] [2020-04-13T10:52:51.697Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-13T10:52:51.698Z] > authorizing via signed-in user
+[debug] [2020-04-13T10:52:51.698Z] [iam] checking project be-scarlet for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-04-13T10:52:51.702Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/be-scarlet:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-04-13T10:52:53.754Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 13 Apr 2020 10:52:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1505","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-13T10:52:53.757Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/be-scarlet  
+ 
+[debug] [2020-04-13T10:52:54.279Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 13 Apr 2020 10:52:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'be-scarlet'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-04-13T10:52:54.285Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/be-scarlet/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-04-13T10:52:56.889Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 13 Apr 2020 10:52:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[be-scarlet]: beginning deploy...
+[info] i  hosting[be-scarlet]: found 22 files in build
+[debug] [2020-04-13T10:52:57.032Z] [hosting] hash cache [YnVpbGQ] stored for 22 files
+[debug] [2020-04-13T10:52:57.033Z] [hosting][hash queue][FINAL] {"max":118,"min":16,"avg":25,"active":0,"complete":22,"success":22,"errored":0,"retried":0,"total":22,"elapsed":127}
+[debug] [2020-04-13T10:52:57.033Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/be-scarlet/versions/e60fa4ade84f4b18:populateFiles  
+ <request body omitted>
+[debug] [2020-04-13T10:52:59.035Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 13 Apr 2020 10:52:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-13T10:52:59.043Z] [hosting][populate queue][FINAL] {"max":2006,"min":2006,"avg":2006,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2012}
+[debug] [2020-04-13T10:52:59.043Z] [hosting] uploads queued: 8

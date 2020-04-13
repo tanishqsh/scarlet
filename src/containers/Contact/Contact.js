@@ -15,7 +15,9 @@ function Contact() {
             <CallToAction actionText={'Go Home'} actionLink={'/'} theme={'secondary'}/>
             <Back changeState={()=>{}} theme={'secondary'}/>
             <div className={'contact-page-container'}>
-                <h1>  </h1>
+                <a href={'tel:+9169419289'}>
+                    <h1> {/* Text added in ::After Pseudo-element */ } </h1>
+                </a>
                 <img alt={'Coffee Cup'} src={CoffeeCup}/>
             </div>
         </div>

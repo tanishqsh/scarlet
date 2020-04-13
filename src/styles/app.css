@@ -305,21 +305,6 @@ Current Date Widget
   right: 10%;
   top: 5%;
 }
-.current-date-container-primary::before {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  border-radius: 100px;
-  background: #ff2400;
-  transition: all 0.5s ease-in-out;
-}
-.current-date-container-primary:hover::before {
-  width: 100px;
-}
 
 .current-date-container-secondary {
   color: #ff2400;
@@ -936,7 +921,7 @@ Contact Page Styling
   transition: all 0.5s ease-in-out;
 }
 .contact-page-container h1:hover::after {
-  content: "bescarlet.in@gmail.com";
+  content: "+91-97694-19289";
 }
 .contact-page-container img {
   position: absolute;

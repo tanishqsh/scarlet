@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "minorpush": "git add --all && git commit -m 'Update' && git push --all && npm run build && firbase deploy"
+    "minorpush": "git add --all && git commit -m 'Update' && git push --all && npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"

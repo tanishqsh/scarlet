@@ -583,7 +583,7 @@ Studio Concept Styling
 }
 .studio-concept-container .content-wrapper p, .studio-concept-container-active .content-wrapper p {
   color: #fff;
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
 }
 .studio-concept-container .content-wrapper #full-circle, .studio-concept-container-active .content-wrapper #full-circle {
@@ -644,7 +644,7 @@ About Page CSS
   transition: all 0.5s ease-in-out;
 }
 .page-container-primary h3 {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -691,7 +691,7 @@ About Page CSS
   transition: all 0.5s ease-in-out;
 }
 .page-container-secondary h3 {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   color: #ff2400;
 }
@@ -741,7 +741,7 @@ Services page styling
   transition: all 0.5s ease-in-out;
 }
 .services-container h3 {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -878,7 +878,7 @@ Contact Page Styling
   transition: all 0.5s ease-in-out;
 }
 .contact-page-container h3 {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -969,7 +969,7 @@ Clients Page Styling
   transition: all 0.5s ease-in-out;
 }
 .clients-container h3 {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   color: #fff;
 }

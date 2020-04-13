@@ -25,7 +25,7 @@ Studio Concept Styling
 
     p {
       color: $secondary-color;
-      text-align: justify;
+      text-align: $text-alignment;
       font-size: $quaternary-font-size;
     }
 

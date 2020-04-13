@@ -15,6 +15,7 @@ $quaternary-font-size: 1.2rem;
 $inactive-primary-color: rgba(255, 36, 0, 0.4);
 $transition: all 0.5s ease-in-out;
 $appear-animation: appear 1s ease-in-out;
+$text-alignment: left;
 
 @media (max-width: 640px) {
   :root{

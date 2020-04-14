@@ -755,6 +755,9 @@ Services page styling
 .services-container .cta-container h2:hover {
   color: #fff;
 }
+.services-container #service:hover #fimg {
+  opacity: 0.2;
+}
 .services-container .show-overflow {
   overflow: visible;
 }

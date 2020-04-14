@@ -5,6 +5,10 @@ Services page styling
 .services-container {
   @include page-container($primary-color, $secondary-color);
 
+  #service:hover #fimg {
+    opacity: 0.2;
+  }
+
   .show-overflow {
     overflow: visible;
   }
@@ -39,7 +43,6 @@ Services page styling
       &:hover{
         opacity: 1;
       }
-
       @include underline-text($secondary-color);
 
     }

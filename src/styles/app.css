@@ -41,7 +41,7 @@
   font-family: "Crimson Text", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: appear 1s ease-in-out;
+  animation: appear 0.7s ease-out;
 }
 
 a, a:focus {
@@ -75,7 +75,7 @@ Underline Text
   height: 3px;
   border-radius: 100px;
   background: #ff2400;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .alt:hover::before {
   width: 100px;
@@ -90,7 +90,7 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   cursor: pointer;
   z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
@@ -105,7 +105,7 @@ Bottom peak styling
 .bottom-peak-container-primary .menu h1 {
   color: #fff;
   font-size: 2.124rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary .menu h1:hover h3 {
   font-size: 1.31rem;
@@ -118,7 +118,7 @@ Bottom peak styling
   font-size: 0.1px;
   color: #ff2400;
   font-style: italic;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary .quote {
   width: 30%;
@@ -141,7 +141,7 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   cursor: pointer;
   z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
@@ -156,7 +156,7 @@ Bottom peak styling
 .bottom-peak-container-secondary .menu h1 {
   color: #ff2400;
   font-size: 2.124rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary .menu h1:hover h3 {
   font-size: 1.31rem;
@@ -169,7 +169,7 @@ Bottom peak styling
   font-size: 0.1px;
   color: #fff;
   font-style: italic;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary .quote {
   width: 30%;
@@ -192,7 +192,7 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   cursor: pointer;
   z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
@@ -210,7 +210,7 @@ Bottom peak styling
 .bottom-peak-container-primary-scrolled .menu h1, .bottom-peak-container-primary:hover .menu h1 {
   color: #fff;
   font-size: 2.124rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary-scrolled .menu h1:hover h3, .bottom-peak-container-primary:hover .menu h1:hover h3 {
   font-size: 1.31rem;
@@ -223,7 +223,7 @@ Bottom peak styling
   font-size: 0.1px;
   color: #ff2400;
   font-style: italic;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary-scrolled .quote, .bottom-peak-container-primary:hover .quote {
   width: 30%;
@@ -246,7 +246,7 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   cursor: pointer;
   z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
@@ -264,7 +264,7 @@ Bottom peak styling
 .bottom-peak-container-secondary-scrolled .menu h1, .bottom-peak-container-secondary:hover .menu h1 {
   color: #ff2400;
   font-size: 2.124rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary-scrolled .menu h1:hover h3, .bottom-peak-container-secondary:hover .menu h1:hover h3 {
   font-size: 1.31rem;
@@ -277,7 +277,7 @@ Bottom peak styling
   font-size: 0.1px;
   color: #fff;
   font-style: italic;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary-scrolled .quote, .bottom-peak-container-secondary:hover .quote {
   width: 30%;
@@ -325,7 +325,7 @@ Current Date Widget
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .current-date-container-secondary:hover::before {
   width: 100px;
@@ -339,7 +339,7 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   color: #ff2400;
 }
 .logo-container-primary h2 {
@@ -358,7 +358,7 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   color: #fff;
 }
 .logo-container-secondary h2 {
@@ -385,7 +385,7 @@ Social Links
   color: rgba(255, 36, 0, 0.4);
   font-size: 1.31rem;
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .social-links-container-primary a:hover {
   color: #ff2400;
@@ -401,7 +401,7 @@ Social Links
   color: rgba(255, 36, 0, 0.4);
   font-size: 1.31rem;
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .social-links-container-secondary a:hover {
   color: #ff2400;
@@ -426,7 +426,7 @@ Back Button
   font-size: 1.31rem;
   color: #fff;
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .back-container-primary h2:hover {
   cursor: pointer;
@@ -443,7 +443,7 @@ Back Button
   font-size: 1.31rem;
   color: #ff2400;
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .back-container-secondary h2:hover {
   cursor: pointer;
@@ -463,7 +463,7 @@ Call To Action
   font-size: 2.124rem;
   color: rgba(255, 36, 0, 0.4);
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .call-to-action-container-primary h2:hover {
   color: #ff2400;
@@ -479,7 +479,7 @@ Call To Action
   font-size: 2.124rem;
   color: rgba(255, 36, 0, 0.4);
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .call-to-action-container-secondary h2:hover {
   color: #ff2400;
@@ -529,7 +529,7 @@ Cursor
   font-weight: 800;
   line-height: 1;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .home-container h3 {
   font-size: 1.31rem;
@@ -551,7 +551,7 @@ Studio Concept Styling
   width: 100vw;
   height: 100vh;
   background: #ff2400;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   cursor: pointer;
   display: flex;
   z-index: 0;
@@ -587,10 +587,10 @@ Studio Concept Styling
   border-radius: 50%;
   background: #ff2400;
   animation: circle-eye 1s ease-in-out infinite alternate;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .studio-concept-container .content-wrapper #partial-circle:hover, .studio-concept-container-active .content-wrapper #partial-circle:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   animation: none;
 }
 @keyframes circle-eye {
@@ -606,7 +606,7 @@ Studio Concept Styling
 .studio-concept-container-active {
   clip-path: circle(100%);
   z-index: 10001;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 
 /*
@@ -626,7 +626,7 @@ About Page CSS
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .page-container-primary h3 {
   text-align: left;
@@ -650,7 +650,7 @@ About Page CSS
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .page-container-primary .cta-container h2:hover::before {
   width: 100px;
@@ -673,7 +673,7 @@ About Page CSS
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .page-container-secondary h3 {
   text-align: left;
@@ -697,7 +697,7 @@ About Page CSS
   height: 3px;
   border-radius: 100px;
   background: #ff2400;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .page-container-secondary .cta-container h2:hover::before {
   width: 100px;
@@ -723,7 +723,7 @@ Services page styling
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .services-container h3 {
   text-align: left;
@@ -747,7 +747,7 @@ Services page styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .services-container .cta-container h2:hover::before {
   width: 100px;
@@ -783,7 +783,7 @@ Services page styling
   overflow: visible;
   padding: 0;
   font-size: 2.124rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   position: relative;
 }
 .services-container .content-outer h1:hover {
@@ -799,7 +799,7 @@ Services page styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .services-container .content-outer h1:hover::before {
   width: 100px;
@@ -812,7 +812,7 @@ Services page styling
 }
 .services-container img {
   opacity: 0.8;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
   animation: up-down 0.6s infinite alternate;
 }
 .services-container img:hover {
@@ -836,7 +836,7 @@ Services page styling
   opacity: 1;
   text-align: left;
   font-size: 2.124rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .services-container .quote-container h1:hover {
   opacity: 1;
@@ -863,7 +863,7 @@ Contact Page Styling
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .contact-page-container h3 {
   text-align: left;
@@ -887,7 +887,7 @@ Contact Page Styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .contact-page-container .cta-container h2:hover::before {
   width: 100px;
@@ -908,7 +908,7 @@ Contact Page Styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .contact-page-container h1:hover::before {
   width: 100px;
@@ -921,7 +921,7 @@ Contact Page Styling
   font-weight: 800;
   line-height: 1.105;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .contact-page-container h1:hover::after {
   content: "+91-97694-19289";
@@ -931,7 +931,7 @@ Contact Page Styling
   bottom: -15%;
   left: 42%;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .contact-page-container img:hover {
   transform: rotateZ(-35deg);
@@ -954,7 +954,7 @@ Clients Page Styling
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .clients-container h3 {
   text-align: left;
@@ -978,7 +978,7 @@ Clients Page Styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 .clients-container .cta-container h2:hover::before {
   width: 100px;
@@ -1064,7 +1064,7 @@ Mobile Queries
     font-size: 1.31rem;
     color: #fff;
     font-weight: bold;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-out;
   }
   .back-container-primary h2:hover {
     cursor: pointer;
@@ -1084,7 +1084,7 @@ Mobile Queries
     font-size: 1.31rem;
     color: #ff2400;
     font-weight: bold;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-out;
   }
   .back-container-secondary h2:hover {
     cursor: pointer;

@@ -21,7 +21,7 @@ function BottomPeak(props){
             className={`bottom-peak-container-${props.theme}`}>
             {
                 showMenu?
-                    <span>
+                    <React.Fragment>
                          <div className={'menu'}>
                         {
                             Menu.map(menu => (
@@ -37,7 +37,7 @@ function BottomPeak(props){
                         <p> It is better to travel well than to arrive. </p>
                         <author> Buddha </author>
                     </div>
-                    </span>
+                    </React.Fragment>
                     :null
             }
         </div>

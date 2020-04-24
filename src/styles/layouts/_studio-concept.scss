@@ -7,13 +7,14 @@ Studio Concept Styling
   width: 100vw;
   height: 100vh;
   background: $primary-color;
-  transition: $transition;
   cursor: pointer;
   display: flex;
   z-index: 0;
   clip-path: circle(0% at 50% 50%);
   justify-content: center;
   align-items: center;
+  /** Transition **/
+  @include transition;
 
   .content-wrapper {
     width: 60%;
@@ -47,10 +48,12 @@ Studio Concept Styling
       border-radius: 50%;
       background: $primary-color;
       animation: circle-eye 1s ease-in-out infinite alternate;
-      transition: $transition;
+      /** Transition **/
+      @include transition;
 
       &:hover {
-        transition: $transition;
+        /** Transition **/
+        @include transition;
         animation: none;
       }
     }
@@ -75,5 +78,6 @@ Studio Concept Styling
   @extend .studio-concept-container;
   clip-path: circle(100%);
   z-index: 10001;
-  transition: $transition;
+  /** Transition **/
+  @include transition;
 }

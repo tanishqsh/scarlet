@@ -75,6 +75,10 @@ Underline Text
   height: 3px;
   border-radius: 100px;
   background: #ff2400;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .alt:hover::before {
@@ -90,9 +94,12 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   cursor: pointer;
-  z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
   background: #ff2400;
 }
@@ -105,6 +112,10 @@ Bottom peak styling
 .bottom-peak-container-primary .menu h1 {
   color: #fff;
   font-size: 2.124rem;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary .menu h1:hover h3 {
@@ -118,6 +129,10 @@ Bottom peak styling
   font-size: 0.1px;
   color: #ff2400;
   font-style: italic;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary .quote {
@@ -141,9 +156,12 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   cursor: pointer;
-  z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
   background: #fff;
 }
@@ -156,6 +174,10 @@ Bottom peak styling
 .bottom-peak-container-secondary .menu h1 {
   color: #ff2400;
   font-size: 2.124rem;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary .menu h1:hover h3 {
@@ -169,6 +191,10 @@ Bottom peak styling
   font-size: 0.1px;
   color: #fff;
   font-style: italic;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary .quote {
@@ -192,12 +218,16 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   cursor: pointer;
-  z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
   background: #ff2400;
   background: #ff2400;
+  z-index: 10000;
   animation: none;
   clip-path: circle(100%);
 }
@@ -210,6 +240,10 @@ Bottom peak styling
 .bottom-peak-container-primary-scrolled .menu h1, .bottom-peak-container-primary:hover .menu h1 {
   color: #fff;
   font-size: 2.124rem;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary-scrolled .menu h1:hover h3, .bottom-peak-container-primary:hover .menu h1:hover h3 {
@@ -223,6 +257,10 @@ Bottom peak styling
   font-size: 0.1px;
   color: #ff2400;
   font-style: italic;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-primary-scrolled .quote, .bottom-peak-container-primary:hover .quote {
@@ -246,12 +284,16 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   cursor: pointer;
-  z-index: 10000;
   animation: heartbeat 0.5s infinite alternate;
   background: #fff;
   background: #fff;
+  z-index: 10000;
   animation: none;
   clip-path: circle(100%);
 }
@@ -264,6 +306,10 @@ Bottom peak styling
 .bottom-peak-container-secondary-scrolled .menu h1, .bottom-peak-container-secondary:hover .menu h1 {
   color: #ff2400;
   font-size: 2.124rem;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary-scrolled .menu h1:hover h3, .bottom-peak-container-secondary:hover .menu h1:hover h3 {
@@ -277,6 +323,10 @@ Bottom peak styling
   font-size: 0.1px;
   color: #fff;
   font-style: italic;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .bottom-peak-container-secondary-scrolled .quote, .bottom-peak-container-secondary:hover .quote {
@@ -325,6 +375,10 @@ Current Date Widget
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .current-date-container-secondary:hover::before {
@@ -339,6 +393,11 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   color: #ff2400;
 }
@@ -358,6 +417,11 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   color: #fff;
 }
@@ -385,6 +449,11 @@ Social Links
   color: rgba(255, 36, 0, 0.4);
   font-size: 1.31rem;
   font-weight: bold;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .social-links-container-primary a:hover {
@@ -401,6 +470,11 @@ Social Links
   color: rgba(255, 36, 0, 0.4);
   font-size: 1.31rem;
   font-weight: bold;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .social-links-container-secondary a:hover {
@@ -426,6 +500,11 @@ Back Button
   font-size: 1.31rem;
   color: #fff;
   font-weight: bold;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .back-container-primary h2:hover {
@@ -443,6 +522,11 @@ Back Button
   font-size: 1.31rem;
   color: #ff2400;
   font-weight: bold;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .back-container-secondary h2:hover {
@@ -463,6 +547,11 @@ Call To Action
   font-size: 2.124rem;
   color: rgba(255, 36, 0, 0.4);
   font-weight: bold;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .call-to-action-container-primary h2:hover {
@@ -479,6 +568,11 @@ Call To Action
   font-size: 2.124rem;
   color: rgba(255, 36, 0, 0.4);
   font-weight: bold;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .call-to-action-container-secondary h2:hover {
@@ -529,6 +623,11 @@ Cursor
   font-weight: 800;
   line-height: 1;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .home-container h3 {
@@ -551,13 +650,18 @@ Studio Concept Styling
   width: 100vw;
   height: 100vh;
   background: #ff2400;
-  transition: all 0.4s ease-out;
   cursor: pointer;
   display: flex;
   z-index: 0;
   clip-path: circle(0% at 50% 50%);
   justify-content: center;
   align-items: center;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 .studio-concept-container .content-wrapper, .studio-concept-container-active .content-wrapper {
   width: 60%;
@@ -587,9 +691,19 @@ Studio Concept Styling
   border-radius: 50%;
   background: #ff2400;
   animation: circle-eye 1s ease-in-out infinite alternate;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .studio-concept-container .content-wrapper #partial-circle:hover, .studio-concept-container-active .content-wrapper #partial-circle:hover {
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   animation: none;
 }
@@ -606,6 +720,11 @@ Studio Concept Styling
 .studio-concept-container-active {
   clip-path: circle(100%);
   z-index: 10001;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 
@@ -626,6 +745,11 @@ About Page CSS
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .page-container-primary h3 {
@@ -650,6 +774,10 @@ About Page CSS
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .page-container-primary .cta-container h2:hover::before {
@@ -673,6 +801,11 @@ About Page CSS
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .page-container-secondary h3 {
@@ -697,6 +830,10 @@ About Page CSS
   height: 3px;
   border-radius: 100px;
   background: #ff2400;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .page-container-secondary .cta-container h2:hover::before {
@@ -723,6 +860,11 @@ Services page styling
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .services-container h3 {
@@ -747,6 +889,10 @@ Services page styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .services-container .cta-container h2:hover::before {
@@ -799,6 +945,10 @@ Services page styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .services-container .content-outer h1:hover::before {
@@ -863,6 +1013,11 @@ Contact Page Styling
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .contact-page-container h3 {
@@ -887,6 +1042,10 @@ Contact Page Styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .contact-page-container .cta-container h2:hover::before {
@@ -908,6 +1067,11 @@ Contact Page Styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .contact-page-container h1:hover::before {
@@ -921,6 +1085,11 @@ Contact Page Styling
   font-weight: 800;
   line-height: 1.105;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .contact-page-container h1:hover::after {
@@ -931,6 +1100,11 @@ Contact Page Styling
   bottom: -15%;
   left: 42%;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .contact-page-container img:hover {
@@ -954,6 +1128,11 @@ Clients Page Styling
   font-weight: 800;
   line-height: 1.1;
   cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .clients-container h3 {
@@ -978,6 +1157,10 @@ Clients Page Styling
   height: 3px;
   border-radius: 100px;
   background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .clients-container .cta-container h2:hover::before {
@@ -1064,6 +1247,11 @@ Mobile Queries
     font-size: 1.31rem;
     color: #fff;
     font-weight: bold;
+    /** Transition **/
+    /** Transitions **/
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
   }
   .back-container-primary h2:hover {
@@ -1084,6 +1272,11 @@ Mobile Queries
     font-size: 1.31rem;
     color: #ff2400;
     font-weight: bold;
+    /** Transition **/
+    /** Transitions **/
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
   }
   .back-container-secondary h2:hover {

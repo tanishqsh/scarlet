@@ -16,7 +16,8 @@
     font-weight: 800;
     line-height: 1;
     cursor: pointer;
-    transition: $transition;
+    /** Transition **/
+    @include transition;
 
   }
 

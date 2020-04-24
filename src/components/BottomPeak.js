@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Menu = [
     {displayName:"Home", subtitle:"Know everything about us.", link:"/"},
@@ -11,23 +11,35 @@ const Menu = [
 
 
 function BottomPeak(props){
+
+    const [showMenu, changeShowMenu] = useState(false);
+
     return(
-        <div className={`bottom-peak-container-${props.theme}`}>
-            <div className={'menu'}>
-                {
-                    Menu.map(menu => (
-                        <a href={menu.link}>
-                            <h1>  {menu.displayName}
-                                <h3> {menu.subtitle} </h3>
-                            </h1>
-                        </a>
-                    ))
-                }
-            </div>
-            <div className={'quote'}>
-                <p> It is better to travel well than to arrive. </p>
-                <author> Buddha </author>
-            </div>
+        <div
+            onMouseLeave={()=> {changeShowMenu(false)}}
+            onMouseEnter={()=> {changeShowMenu(true)}}
+            className={`bottom-peak-container-${props.theme}`}>
+            {
+                showMenu?
+                    <span>
+                         <div className={'menu'}>
+                        {
+                            Menu.map(menu => (
+                                <a href={menu.link}>
+                                    <h1>  {menu.displayName}
+                                        <h3> {menu.subtitle} </h3>
+                                    </h1>
+                                </a>
+                            ))
+                        }
+                    </div>
+                    <div className={'quote'}>
+                        <p> It is better to travel well than to arrive. </p>
+                        <author> Buddha </author>
+                    </div>
+                    </span>
+                    :null
+            }
         </div>
     );
 }

@@ -10,9 +10,8 @@ Bottom peak styling
   width: 100vw;
   border-radius: 0%;
   clip-path: circle(10% at 50% 105%);
-  transition: $transition;
+  @include transition;
   cursor: pointer;
-  z-index: 10000;
   animation: heartbeat .5s infinite alternate;
   background: $color;
 
@@ -25,7 +24,7 @@ Bottom peak styling
     h1 {
       color: $color2;
       font-size: $secondary-font-size;
-      transition: $transition;
+      @include transition;
 
       &:hover h3 {
         font-size: $tertiary-font-size;
@@ -42,7 +41,7 @@ Bottom peak styling
       font-size: 0.1px;
       color: $color;
       font-style: italic;
-      transition: $transition;
+      @include transition;
     }
 
   }
@@ -77,6 +76,7 @@ Bottom peak styling
 .bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover{
   @include bottom-peak-container($primary-color, $secondary-color);
   background: $primary-color;
+  z-index: 10000;
   animation: none;
   clip-path: circle(100%);
 }
@@ -84,6 +84,7 @@ Bottom peak styling
 .bottom-peak-container-secondary-scrolled, .bottom-peak-container-secondary:hover{
   @include bottom-peak-container($secondary-color, $primary-color);
   background: $secondary-color;
+  z-index: 10000;
   animation: none;
   clip-path: circle(100%);
 }
@@ -122,7 +123,8 @@ Scarlet Logo
   left: 10%;
   top: 5%;
   cursor: pointer;
-  transition: $transition;
+  /** Transition **/
+  @include transition;
 
   h2 {
     font-size: $secondary-font-size;
@@ -164,7 +166,8 @@ Social Links
     color: $inactive-primary-color;
     font-size: $tertiary-font-size;
     font-weight: bold;
-    transition: $transition;
+    /** Transition **/
+    @include transition;
 
     &:hover {
       color: $primary-color;
@@ -202,7 +205,8 @@ Back Button
     font-size: $tertiary-font-size;
     color: $color;
     font-weight: bold;
-    transition: $transition;
+    /** Transition **/
+    @include transition;
   }
 
 
@@ -236,7 +240,8 @@ Call To Action
     font-size: $secondary-font-size;
     color: $inactive-primary-color;
     font-weight: bold;
-    transition: $transition;
+    /** Transition **/
+    @include transition;
   }
 
   h2:hover {

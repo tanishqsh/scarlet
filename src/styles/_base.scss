@@ -20,6 +20,13 @@ a:hover {
   text-decoration: none;
 }
 
+@mixin  transition {
+  /** Transitions **/
+  -webkit-transition:$transition;
+  -moz-transition:$transition;
+  -ms-transition: $transition;
+  transition:$transition;
+}
 
 /*
 Underline Text
@@ -36,7 +43,7 @@ Underline Text
     height: 3px;
     border-radius: 100px;
     background: $color ;
-    transition: $transition;
+    @include transition
   }
 
   &:hover::before {
@@ -54,3 +61,5 @@ Underline Text
   border-bottom: 0.001px solid $primary-color;
 
 }
+
+

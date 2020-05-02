@@ -1401,5 +1401,70 @@ Mobile Queries
     display: none;
   }
 }
+/*
+People Page Styling
+ */
+.people-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff2400;
+}
+.people-container h1 {
+  font-size: 3.43rem;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.1;
+  cursor: pointer;
+  /** Transition **/
+  /** Transitions **/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.people-container h3 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.people-container .cta-container h2 {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.people-container .cta-container h2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.people-container .cta-container h2:hover::before {
+  width: 100px;
+}
+.people-container .cta-container h2:hover {
+  color: #fff;
+}
+.people-container img {
+  filter: opacity(10%);
+  transition: all 0.3s ease-in-out;
+}
+.people-container img:hover {
+  filter: opacity(100%);
+}
 
 /*# sourceMappingURL=app.css.map */

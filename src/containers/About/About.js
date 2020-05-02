@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const containerLinks = [
     {name: 'Our services', link:'/services'},
-    {name: 'People behind Scarlet.', link:'/about'},
+    {name: 'People behind Scarlet.', link:'/people'},
     {name: 'Our philosophy', link:'/about'},
 ];
 

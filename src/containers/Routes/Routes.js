@@ -5,6 +5,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
 import Clients from "../Clients/Clients";
+import People from "../People/People";
 
 function Routes() {
     return(
@@ -27,6 +28,9 @@ function Routes() {
                 </Route>
                 <Route exact path={'/clients'}>
                     <Clients/>
+                </Route>
+                <Route exact path={'/people'}>
+                    <People/>
                 </Route>
             </Switch>
         </Router>

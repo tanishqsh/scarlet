@@ -1,0 +1,17 @@
+/*
+People Page Styling
+ */
+
+.people-container {
+  @include page-container($primary-color, $secondary-color);
+
+  img {
+    filter: opacity(10%);
+    transition: $transition;
+
+    &:hover {
+      filter: opacity(100%);
+    }
+  }
+
+}

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Back from "./Back";
 
 const Menu = [
     {displayName:"Home", subtitle:"Know everything about us.", link:"/"},
@@ -22,7 +23,7 @@ function BottomPeak(props){
             {
                 showMenu?
                     <React.Fragment>
-                         <div className={'menu'}>
+                        <div className={'menu'}>
                         {
                             Menu.map(menu => (
                                 <a href={menu.link}>

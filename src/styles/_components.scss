@@ -166,13 +166,13 @@ Social Links
     color: $inactive-primary-color;
     font-size: $tertiary-font-size;
     font-weight: bold;
+
     /** Transition **/
     @include transition;
 
     &:hover {
       color: $primary-color;
     }
-
   }
 }
 

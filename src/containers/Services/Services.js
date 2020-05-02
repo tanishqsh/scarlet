@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import BottomPeak from "../../components/BottomPeak";
 import Back from "../../components/Back";
 import Astronaut from "../../images/astronaut.png";
@@ -13,11 +13,6 @@ const services = [
 
 
 function Services() {
-
-    const [userOnService, changeUserOnService] = useState({
-        service: 0,
-        status: false
-    });
 
     return(
         <div className={'services-container'}>

@@ -12,7 +12,7 @@ function Home() {
     return(
         <div className={'home-container container-fluid'}>
             <StudioConcept currentState={currentState}/>
-            <BottomPeak theme={'primary'}/>
+            <BottomPeak changeState={changeState} theme={'primary'}/>
             <Frame theme={'primary'}/>
             <Back theme={'primary'} changeState={changeState}/>
             <div className={'row inner-container'}>

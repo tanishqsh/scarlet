@@ -10,11 +10,11 @@ $secondary-color: #fff;
 $font-system: 'Crimson Text', sans-serif;
 $primary-font-size: 3.43rem;
 $secondary-font-size: 2.124rem;
-$tertiary-font-size: 1.31rem;
+$tertiary-font-size: 1.75rem;
 $quaternary-font-size: 1.2rem;
 $inactive-primary-color: rgba(255, 36, 0, 0.4);
-$transition: all 0.4s ease-out;
-$appear-animation: appear 0.7s ease-out;
+$transition: all 0.3s ease-in-out;
+$appear-animation: appear 0.3s ease-in-out;
 $text-alignment: left;
 
 @media (max-width: 640px) {

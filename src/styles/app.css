@@ -1411,6 +1411,7 @@ People Page Styling
   justify-content: center;
   align-items: center;
   background: #ff2400;
+  padding: 50px;
 }
 .people-container h1 {
   font-size: 3.43rem;
@@ -1465,6 +1466,36 @@ People Page Styling
 }
 .people-container img:hover {
   filter: opacity(100%);
+}
+.people-container h4, .people-container a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.1s linear;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.people-container h4::before, .people-container a::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #fff;
+  /** Transitions **/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.people-container h4:hover::before, .people-container a:hover::before {
+  width: 100px;
+}
+.people-container h4:hover, .people-container a:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

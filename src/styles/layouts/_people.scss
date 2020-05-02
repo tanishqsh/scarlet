@@ -4,6 +4,7 @@ People Page Styling
 
 .people-container {
   @include page-container($primary-color, $secondary-color);
+  padding: 50px;
 
   img {
     filter: opacity(10%);
@@ -11,6 +12,21 @@ People Page Styling
 
     &:hover {
       filter: opacity(100%);
+    }
+  }
+
+  h4, a {
+    color: rgba(255,255,255,0.7);
+    transition: all 0.1s linear;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 10px;
+
+    @include underline-text($secondary-color);
+
+    &:hover {
+      color: $secondary-color;
     }
   }
 

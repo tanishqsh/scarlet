@@ -2,7 +2,6 @@ import React from 'react';
 
 const pills = [
     {name: 'Instagram', link: 'https://www.instagram.com/be.scarlet/'},
-    {name: 'People', link: '/people'}
 ];
 
 function SocialLinks(props){

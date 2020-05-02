@@ -6,23 +6,35 @@ import CallToAction from "../../components/CallToAction";
 import Back from "../../components/Back";
 import TanishqImage from '../../images/tanishq.jpg';
 import BottomPeak from "../../components/BottomPeak";
+import {Link} from "react-router-dom";
 
 export default function People(){
+
     return(
         <div className={'people-container container-fluid'}>
             <CurrentDate theme={'secondary'}/>
             <SocialLinks theme={'secondary'}/>
             <Logo theme={'secondary'}/>
             <BottomPeak theme={'secondary'}/>
+            <Back theme={'secondary'} changeState={()=>{}}/>
             <CallToAction actionText={'Go Home'} actionLink={'/'} theme={'secondary'}/>
-           <div className={'row'}>
-               <div className={'col-sm-6 text-center'}>
-                   <img width='50%' src={TanishqImage}/>
-               </div>
-               <div className={'col-sm-6 text-center'}>
-                   <img width='50%' src={TanishqImage}/>
-               </div>
-           </div>
+            <div className={'row'}>
+                <div className={'col-sm-3'}/>
+                <div className={'col-sm-3 text-left'}>
+                    <h1> Tanishq </h1>
+                    <h3> Full Stack Developer, Brand Designer and a Psychological Driven Marketer at the core. Founded Scarlet, TheLabs and Whoosh. With over 8 years of product & design development, psychology-driven advertising, I have helped countless brands in India, UK and UAE refine and implement their ideas. </h3>
+                    <hr/>
+                    <h4> <a target={'blank'} href={'https://www.linkedin.com/in/tanishqsh/'}> Connect </a></h4>
+                </div>
+                <div className={'col-sm-3 text-left'}>
+                    <h1> Divyang </h1>
+                    <h3> An entrepreneur with a demonstrated history of Startup creation and business development. Skilled in system modeling, application development, marketing, web development, user experience and a strong business development professional with a B. Tech + MBA focused on Marketing, Operations and Information Technology from SVKM's Narsee Monjee Institute of Management Studies (NMIMS).
+                    </h3>
+                    <hr/>
+                    <h4> <a target={'blank'} href={'https://www.linkedin.com/in/divyang-kaushik-672b37142/'}> Connect </a> </h4>
+                </div>
+                <div className={'col-sm-3'}/>
+            </div>
         </div>
     );
 }

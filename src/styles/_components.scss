@@ -73,7 +73,7 @@ Bottom peak styling
   @include bottom-peak-container($secondary-color, $primary-color);
 }
 
-.bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover{
+.bottom-peak-container-primary-scrolled, .bottom-peak-container-primary:hover, {
   @include bottom-peak-container($primary-color, $secondary-color);
   background: $primary-color;
   z-index: 10000;
@@ -88,7 +88,6 @@ Bottom peak styling
   animation: none;
   clip-path: circle(100%);
 }
-
 
 
 /*
@@ -197,9 +196,9 @@ Back Button
 
 @mixin back-container($color) {
   position: absolute;
-  left: 20%;
+  left: 20%;;
   bottom: 20%;
-  z-index: 1000000;
+  z-index: 100000;
 
   h2 {
     font-size: $tertiary-font-size;

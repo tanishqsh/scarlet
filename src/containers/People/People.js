@@ -5,6 +5,7 @@ import Logo from "../../components/Logo";
 import CallToAction from "../../components/CallToAction";
 import Back from "../../components/Back";
 import TanishqImage from '../../images/tanishq.jpg';
+import BottomPeak from "../../components/BottomPeak";
 
 export default function People(){
     return(
@@ -12,8 +13,8 @@ export default function People(){
             <CurrentDate theme={'secondary'}/>
             <SocialLinks theme={'secondary'}/>
             <Logo theme={'secondary'}/>
+            <BottomPeak theme={'secondary'}/>
             <CallToAction actionText={'Go Home'} actionLink={'/'} theme={'secondary'}/>
-            <Back changeState={()=>{}} theme={'secondary'}/>
            <div className={'row'}>
                <div className={'col-sm-6 text-center'}>
                    <img width='50%' src={TanishqImage}/>

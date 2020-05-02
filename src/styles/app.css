@@ -494,7 +494,7 @@ Back Button
   position: absolute;
   left: 20%;
   bottom: 20%;
-  z-index: 1000000;
+  z-index: 100000;
 }
 .back-container-primary h2 {
   font-size: 1.75rem;
@@ -516,7 +516,7 @@ Back Button
   position: absolute;
   left: 20%;
   bottom: 20%;
-  z-index: 1000000;
+  z-index: 100000;
 }
 .back-container-secondary h2 {
   font-size: 1.75rem;
@@ -1246,7 +1246,7 @@ Mobile Queries
     position: absolute;
     left: 20%;
     bottom: 20%;
-    z-index: 1000000;
+    z-index: 100000;
   }
   .back-container-primary h2 {
     font-size: 1.75rem;
@@ -1273,7 +1273,7 @@ Mobile Queries
     position: absolute;
     left: 20%;
     bottom: 20%;
-    z-index: 1000000;
+    z-index: 100000;
   }
   .back-container-secondary h2 {
     font-size: 1.75rem;

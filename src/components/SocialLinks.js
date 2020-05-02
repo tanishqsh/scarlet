@@ -2,7 +2,7 @@ import React from 'react';
 
 const pills = [
     {name: 'Instagram', link: 'https://www.instagram.com/be.scarlet/'},
-    {name: 'Mumbai, India / 2020', link: '/contact'}
+    {name: 'People', link: '/people'}
 ];
 
 function SocialLinks(props){
@@ -11,7 +11,7 @@ function SocialLinks(props){
                 <h2>
                 { pills.map((pill, i) => (
                     <a target={'_blank'} rel="noopener noreferrer" key={i} href={pill.link}>
-                        <span> {pill.name} {pills[i+1]!= null?<span>–</span>:<span></span>}  </span>
+                        <span> {pill.name} {pills[i+1]?<span>–</span>:<span></span>}  </span>
                     </a>
                 )) }
                 </h2>

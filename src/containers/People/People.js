@@ -21,10 +21,7 @@ export default function People(){
             <div className={'row'}>
                 <div className={'col-sm-3'}/>
                 <div className={'col-sm-3 text-left'}>
-                    <h1> Tanishq </h1>
-                    <h3> Full Stack Developer, Brand Designer and a Psychological Driven Marketer at the core. Founded Scarlet, TheLabs and Whoosh. With over 8 years of product & design development, psychology-driven advertising, I have helped countless brands in India, UK and UAE refine and implement their ideas. </h3>
-                    <hr/>
-                    <h4> <a target={'blank'} href={'https://www.linkedin.com/in/tanishqsh/'}> Connect </a></h4>
+                    {}
                 </div>
                 <div className={'col-sm-3 text-left'}>
                     <h1> Divyang </h1>

@@ -23,10 +23,11 @@ export default function People(){
                 <div className={'col-sm-3 text-left'}>
                     <h1> Tanishq </h1>
                     <h3> Full Stack Developer, Brand Designer and a Psychological Driven Marketer at the core. Founded Scarlet, TheLabs and Whoosh.
-                        With over 8 years of product & design development, psychology-driven advertising, I have helped countless brands in India, UK and UAE refine and implement their ideas. With a platform that curates educational short term programs outside India, I have helped countless students to get an experience of international education.
-                        With a brand that focuses on revolutionary new designs, I have helped over tens of thousands of customers at Whoosh, to re-define their fashion.
+                        With over 8 years of product & design development, psychology-driven advertising, I have helped countless brands in India, UK and UAE refine and implement their ideas.
                         I am a conceptualist and this is my story.
                     </h3>
+                    <hr/>
+                    <h4> <a target={'blank'} href={'https://www.linkedin.com/in/tanishqsh/'}> Connect </a> </h4>
                 </div>
                 <div className={'col-sm-3 text-left'}>
                     <h1> Divyang </h1>

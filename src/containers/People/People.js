@@ -4,9 +4,7 @@ import SocialLinks from "../../components/SocialLinks";
 import Logo from "../../components/Logo";
 import CallToAction from "../../components/CallToAction";
 import Back from "../../components/Back";
-import TanishqImage from '../../images/tanishq.jpg';
 import BottomPeak from "../../components/BottomPeak";
-import {Link} from "react-router-dom";
 
 export default function People(){
 

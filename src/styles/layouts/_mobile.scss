@@ -3,6 +3,11 @@ Mobile Queries
  */
 @media (max-width: 640px) {
 
+  .home-container{
+    height: 100vh;
+    padding: 50px;
+  }
+
   * {
     overflow-x: hidden;
     overflow-y: visible;
@@ -10,11 +15,13 @@ Mobile Queries
 
   //mobile menu
   .bottom-peak-container-primary{
-    clip-path: circle(10% at 50% 100%);
+    clip-path: circle(20% at 50% 100%);
+    margin-top: 50px;
 
     .menu {
       h1 {
-        margin-bottom: 20px;
+        padding-top: 5px;
+
 
         h3 {
           color: $secondary-color !important;

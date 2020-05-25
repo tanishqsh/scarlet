@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Back from "./Back";
 
 const Menu = [
     {displayName:"Home", subtitle:"Know everything about us.", link:"/"},

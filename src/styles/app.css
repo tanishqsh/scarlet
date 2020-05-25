@@ -1093,7 +1093,7 @@ Contact Page Styling
   transition: all 0.3s ease-in-out;
 }
 .contact-page-container h1:hover::after {
-  content: "+91-97694-19289";
+  content: "+91-97694-19289, Divyang.";
 }
 .contact-page-container img {
   position: absolute;
@@ -1203,16 +1203,22 @@ Clients Page Styling
 Mobile Queries
  */
 @media (max-width: 640px) {
+  .home-container {
+    height: 100vh;
+    padding: 50px;
+  }
+
   * {
     overflow-x: hidden;
     overflow-y: visible;
   }
 
   .bottom-peak-container-primary {
-    clip-path: circle(10% at 50% 100%);
+    clip-path: circle(20% at 50% 100%);
+    margin-top: 50px;
   }
   .bottom-peak-container-primary .menu h1 {
-    margin-bottom: 20px;
+    padding-top: 5px;
   }
   .bottom-peak-container-primary .menu h1 h3 {
     color: #fff !important;

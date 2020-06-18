@@ -10,15 +10,12 @@
   animation: $appear-animation;
 }
 
-a, a:focus {
-  color: $primary-color;
-  text-decoration: none;
+a, a:focus, a:hover {
+  color: $primary-color !important;
+  text-decoration: none !important;
+  text-underline: none !important;
 }
 
-a:hover {
-  color: $primary-color;
-  text-decoration: none;
-}
 
 @mixin  transition {
   /** Transitions **/
